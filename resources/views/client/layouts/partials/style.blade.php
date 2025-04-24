@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/font-awesome-pro.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/magnific-popup.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/owl.carousel.min.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/slick-slider.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/meanmenu.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/typography.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/preloader.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/mobile-menu.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/aos.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/header.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/footer.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/fonts.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/animate.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/blog-page.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/modal-video.min.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/nice-select.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/comon.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/animation.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/visafast-unit.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/visafast-core.css" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="{{ asset('assets') }}/client/css/responsive.css" />
