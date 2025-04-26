@@ -82,22 +82,24 @@
                     <div class="hadding4 about4-hadding">
                         <span class="font-f-2" data-aos="fade-left" data-aos-duration="700">về công ty</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-left" data-aos-duration="900">With years of experience in
-                            the visa consulting industry we understand Consulting. </h1>
+                        <h1 class="font-f-4" data-aos="fade-left" data-aos-duration="900">Với nhiều năm kinh nghiệm trong
+                            ngành tư vấn du học, chúng tôi hiểu rõ về Tư vấn. </h1>
                         <div class="space24"></div>
-                        <p class="font-f-2" data-aos="fade-left" data-aos-duration="1100">With a deep understanding
-                            of
-                            the intricate visa regulations and ever-changing immigration landscape, we stand as your
-                            beacon of knowledge and support. Our consultants are not just experts; they are passionate
-                            about helping you navigate the complexities of visa applications with ease.</p>
+                        <p class="font-f-2" data-aos="fade-left" data-aos-duration="1100">Công ty TNHH Du học Quốc tế M.I.M.
+                            mang sứ mệnh <b>kết nối tri thức – chắp cánh ước mơ du học</b> cho thế hệ trẻ Việt Nam. Chúng
+                            tôi cam
+                            kết đồng hành cùng học sinh và phụ huynh từ bước đầu định hướng ngành học, xử lý hồ sơ, xin visa
+                            đến quá trình ổn định cuộc sống tại Hàn Quốc, với tinh thần <b>tận tâm – minh bạch – đúng
+                                luật</b>.</p>
                         <div class="space20"></div>
-                        <p class="font-f-2" data-aos="fade-left" data-aos-duration="700">Our mission is simple: to
-                            simplify your journey to global opportunities. We believe that borders should never limit
-                            your potential. We are here to provide you with the right tools, guidance, and strategies to
-                            achieve your dreams of studying, working, or settling abroad.</p>
+                        <p class="font-f-2" data-aos="fade-left" data-aos-duration="700">Công ty TNHH Du học Quốc tế M.I.M.
+                            được thành lập bởi chị Nguyễn Thị Loan – cựu du học sinh đã có hơn 8 năm sinh sống và học tập
+                            tại Hàn Quốc, tốt nghiệp chuyên ngành Khách sạn – Du lịch tại trường đại học Daegu ( 대구대학교).
+                            Trong suốt quá trình học tập, chị không chỉ tích lũy kiến thức chuyên môn mà còn có trải nghiệm
+                            sâu sắc về cuộc sống thực tế của du học sinh Việt Nam tại Hàn.</p>
                         <div class="space32"></div>
                         <div class="" data-aos="fade-left" data-aos-duration="900">
-                            <a href="about.html" class="theme-btn9 font-f-4">Discover Our Story</a>
+                            <a href="/about" class="theme-btn9 font-f-4">Xem Thêm Về Chúng Tôi</a>
                         </div>
                     </div>
                 </div>

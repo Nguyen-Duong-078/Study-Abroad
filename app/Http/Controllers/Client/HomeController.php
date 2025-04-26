@@ -11,6 +11,27 @@ class HomeController extends Controller
     public function index()
     {
         return view('client.home');
+
+    }
+    public function about()
+    {
+        return view('client.about');
+    }
+    public function overview()
+    {
+        return view('client.study_abroad.overview');
+    }
+    public function expense()
+    {
+        return view('client.study_abroad.expense');
+    }
+    public function visa()
+    {
+        return view('client.study_abroad.visa');
+    }
+    public function scholarship()
+    {
+        return view('client.study_abroad.scholarship');
     }
 
     /**

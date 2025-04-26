@@ -20,11 +20,18 @@
                         <div class="main-menu-ex main-menu-ex5">
                             <ul class="font-f-4">
                                 <li><a href="/">Trang Chủ</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#service">Service</a></li>
-                                <li><a href="#countries">Countries</a></li>
-                                <li><a href="#progress">Progress</a></li>
-                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="/about">Giới thiệu</a></li>
+                                <li><a href="#service">Tìm Trường</a></li>
+                                <li  class="has-dropdown has-dropdown1"><a href="team.html">Du học cần biết</a>
+                                    <ul class="sub-menu">
+                                      <li><a href="study_abroad/overview">Tổng Quan</a></li>
+                                      <li><a href="study_abroad/expense">Chi Phí</a></li>
+                                      <li><a href="study_abroad/visa">VISA</a></li>
+                                      <li><a href="team-details.html">Học Bổng</a></li>
+                                    </ul>
+                                  </li>
+                                <li><a href="#progress">Bài viết</a></li>
+                                <li><a href="#blog">Liên hệ</a></li>
                             </ul>
                         </div>
                         <div class="home2-header-buttons">
