@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class School extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'korean_name',
+        'english_name',
+        'img_thumbnail',
+        'year_of',
+        'number_of_students',
+        'tuition',
+        'dormitory',
+        'address',
+        'website',
+        'description',
+        'under',
+        'content'
+    ];
+
+    public function category()
+    {
+        return $this->belongsTo(Categorie::class);
+    }
+}
