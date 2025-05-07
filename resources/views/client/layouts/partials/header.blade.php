@@ -12,7 +12,7 @@
                 <div class="col-12">
                     <div class="header-elements _relative">
                         <div class="site-logo home1-site-logo">
-                            <a href="index1.html">
+                            <a href="/">
                                 <img src="{{ asset('assets') }}/client/img/image/mim.jpg" alt="" width="50px"
                                     height="50px" />
                             </a>
@@ -27,7 +27,7 @@
                                       <li><a href="study_abroad/overview">Tổng Quan</a></li>
                                       <li><a href="study_abroad/expense">Chi Phí</a></li>
                                       <li><a href="study_abroad/visa">VISA</a></li>
-                                      <li><a href="team-details.html">Học Bổng</a></li>
+                                      <li><a href="/study_abroad/famous_industry">Top ngành học</a></li>
                                     </ul>
                                   </li>
                                 <li><a href="#progress">Bài viết</a></li>
@@ -38,11 +38,9 @@
                             <div class="button2-all">
                                 <div class="select-countrie">
                                     <select class="select-countries">
+                                        <option value="">VN</option>
                                         <option value="">EN</option>
-                                        <option value="">IN</option>
-                                        <option value="">ID</option>
-                                        <option value="">IR</option>
-                                        <option value="">IQ</option>
+
                                     </select>
                                 </div>
                                 <a href="contact.html" class="theme-btn9 font-f-4">Đặt lịch tư vấn</a>

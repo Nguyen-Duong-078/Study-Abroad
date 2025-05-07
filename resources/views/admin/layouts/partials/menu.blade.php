@@ -29,6 +29,27 @@
             <span class="menu-header-text" data-i18n="Apps & Pages">Apps &amp; Pages</span>
         </li>
 
+        <li class="menu-item @yield('menu-item-post')">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class='menu-icon tf-icons mdi mdi-post'></i>
+                <div data-i18n="Danh mục">Danh mục</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item @yield('menu-sub-create-post')">
+                    <a href="{{ route('categories.create') }}" class="menu-link">
+                        <div data-i18n="Thêm Danh mục">Thêm Danh mục</div>
+                    </a>
+                </li>
+                <li class="menu-item @yield('menu-sub-index-post')">
+                    <a href="{{ route('categories.index') }}" class="menu-link">
+                        <div data-i18n="Danh sách Danh mục">Danh sách Danh mục</div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </li>
+
         <li class="menu-item @yield('menu-item-contact')">
             <a href="" class="menu-link">
                 <i class='menu-icon tf-icons mdi mdi-card-account-mail-outline'></i>
@@ -40,16 +61,16 @@
         <li class="menu-item @yield('menu-item-post')">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class='menu-icon tf-icons mdi mdi-post'></i>
-                <div data-i18n="Bài viết">Bài viết</div>
+                <div data-i18n="Trường học">Trường học</div>
             </a>
             <ul class="menu-sub">
                 <li class="menu-item @yield('menu-sub-create-post')">
-                    <a href="" class="menu-link">
-                        <div data-i18n="Thêm bài viết">Thêm bài viết</div>
+                    <a href="{{route('schools.create')}}" class="menu-link">
+                        <div data-i18n="Thêm trường học">Thêm trường học</div>
                     </a>
                 </li>
                 <li class="menu-item @yield('menu-sub-index-post')">
-                    <a href="" class="menu-link">
+                    <a href="{{route('schools.index')}}" class="menu-link">
                         <div data-i18n="Danh sách bài viết">Danh sách bài viết</div>
                     </a>
                 </li>

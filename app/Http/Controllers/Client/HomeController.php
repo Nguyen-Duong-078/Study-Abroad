@@ -29,10 +29,12 @@ class HomeController extends Controller
     {
         return view('client.study_abroad.visa');
     }
-    public function scholarship()
+    public function famous_industry()
     {
-        return view('client.study_abroad.scholarship');
+        return view('client.study_abroad.famous_industry');
     }
+
+
 
     /**
      * Show the form for creating a new resource.

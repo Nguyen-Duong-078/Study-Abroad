@@ -10,6 +10,7 @@ class School extends Model
     use HasFactory;
 
     protected $fillable = [
+        'categorie_id',
         'korean_name',
         'english_name',
         'img_thumbnail',
@@ -24,7 +25,7 @@ class School extends Model
         'content'
     ];
 
-    public function category()
+    public function categorie()
     {
         return $this->belongsTo(Categorie::class);
     }

@@ -23,9 +23,9 @@ return new class extends Migration {
             $table->string('dormitory');
             $table->string('address');
             $table->string('website');
-            $table->string('description');
-            $table->string('under');
-            $table->string('content');
+            $table->longText('description');
+            $table->text('under');
+            $table->longText('content');
             $table->timestamps();
         });
     }
