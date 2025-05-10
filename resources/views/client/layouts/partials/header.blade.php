@@ -21,15 +21,15 @@
                             <ul class="font-f-4">
                                 <li><a href="/">Trang Chủ</a></li>
                                 <li><a href="/about">Giới thiệu</a></li>
-                                <li><a href="#service">Tìm Trường</a></li>
-                                <li  class="has-dropdown has-dropdown1"><a href="team.html">Du học cần biết</a>
+                                <li><a href="#schools">Tìm Trường</a></li>
+                                <li class="has-dropdown has-dropdown1"><a href="team.html">Du học cần biết</a>
                                     <ul class="sub-menu">
-                                      <li><a href="study_abroad/overview">Tổng Quan</a></li>
-                                      <li><a href="study_abroad/expense">Chi Phí</a></li>
-                                      <li><a href="study_abroad/visa">VISA</a></li>
-                                      <li><a href="/study_abroad/famous_industry">Top ngành học</a></li>
+                                        <li><a href="study_abroad/overview">Tổng Quan</a></li>
+                                        <li><a href="study_abroad/expense">Chi Phí</a></li>
+                                        <li><a href="study_abroad/visa">VISA</a></li>
+                                        <li><a href="/study_abroad/famous_industry">Top ngành học</a></li>
                                     </ul>
-                                  </li>
+                                </li>
                                 <li><a href="#progress">Bài viết</a></li>
                                 <li><a href="/lien-he">Liên hệ</a></li>
                             </ul>
@@ -261,3 +261,81 @@
     </div>
 </div>
 <!--=====Mobile header end=======-->
+<!-- Button Toggle -->
+<div class="contact-box">
+    <div class="contact-toggle" onclick="toggleContact()">
+        <span><i class="fa-solid fa-message"></i></span>
+    </div>
+
+    <!-- Contact Options -->
+    <div class="contact-options" id="contact-options">
+        <a href="https://m.me/yourpage" target="_blank">
+            <img class="me-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" />
+            Facebook
+        </a>
+        <a href="https://zalo.me/0942209198" target="_blank">
+            <img class="me-1" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" />
+            Zalo
+        </a>
+        <a href="tel:0942209198">
+            <img class="me-1" src="https://cdn-icons-png.flaticon.com/512/597/597177.png" />
+            0942.209.198
+        </a>
+    </div>
+</div>
+<style>
+    .contact-box {
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        z-index: 9999;
+        font-family: Arial, sans-serif;
+    }
+
+    .contact-toggle {
+        width: 55px;
+        height: 55px;
+        background-color: rgb(43, 200, 158);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-options {
+        display: none;
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        background-color: white;
+        border-radius: 8px;
+        padding: 0 40px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-options a {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .contact-options a img {
+        width: 24px;
+        height: 24px;
+        margin-right: 2px;
+    }
+</style>
+<script>
+    function toggleContact() {
+        const box = document.getElementById('contact-options');
+        box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    }
+</script>

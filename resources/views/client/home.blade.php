@@ -8,10 +8,10 @@
                 <div class="col-lg-6">
                     <div class="main-hadding4">
                         <div class="main-span4">
-                            <h1 class="font-f-4">Trao quyền cho ước mơ của bạn với dịch vụ tư vấn thị thực được thiết kế
+                            <h1 class="font-f-4">Trao quyền cho ước mơ của bạn với dịch vụ tư vấn du học được thiết kế
                                 riêng</h1>
                             <div class="space16"></div>
-                            <p class="font-f-2">Duyệt đơn xin thị thực dễ dàng - Đối tác đáng tin cậy của bạn trong việc
+                            <p class="font-f-2">Duyệt đơn xin du học dễ dàng - Đối tác đáng tin cậy của bạn trong việc
                                 Đạt được ước mơ của bạn Cho dù bạn đang theo đuổi giáo dục, phát triển sự nghiệp hay một
                                 chương mới
                                 ở một vùng đất xa lạ.</p>
@@ -111,128 +111,39 @@
 
     <!--=====service start=======-->
 
-    <div class="service4 sp3 _relative" id="service" style="background-color: #F6F6F6;">
+    <div class="service4 sp3 _relative" id="schools" style="background-color: #F6F6F6;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 m-auto text-center">
                     <div class="hadding4">
-                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Service we offer</span>
+                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Dịch vụ chúng tôi cung cấp</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Global Visa Navigator Your
-                            Pathway to Seamless Travel</h1>
+                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Global Visa Navigator Con đường của
+                            bạn đến với chuyến du học liền mạch</h1>
                     </div>
                 </div>
             </div>
             <div class="space30"></div>
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="service4-box" data-aos="fade-up" data-aos-duration="700">
-                        <div class="service4-img img5 img100">
-                            <img src="{{ asset('assets') }}/client/img/image/service4-img1.png" alt="">
-                        </div>
-                        <div class="hadding4">
-                            <div class="space16"></div>
-                            <h4><a href="service-details.html" class="font-f-4">Study Visas</a></h4>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Embark on your educational journey abroad with confidence. Our
-                                experienced will help you secure the right study visa.</p>
-                            <div class="space16"></div>
-                            <a class="service4-learn-more font-f-2" href="service-details.html">Read more <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="service4-box" data-aos="fade-up" data-aos-duration="900">
-                        <div class="service4-img img5 img100">
-                            <img src="{{ asset('assets') }}/client/img/image/service4-img2.png" alt="">
-                        </div>
-                        <div class="hadding4">
-                            <div class="space16"></div>
-                            <h4><a href="service-details.html" class="font-f-4">Work Visa</a></h4>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Expand your horizons and career prospects by obtaining the right work
-                                visa. We provide comprehensive tailored your goals.</p>
-                            <div class="space16"></div>
-                            <a class="service4-learn-more font-f-2" href="service-details.html">Read more <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
+                @foreach ($schools as $item)
+                    <div class="col-lg-4">
+                        <div class="service4-box" data-aos="fade-up" data-aos-duration="700">
+                            <div class="service4-img img5 img100s">
+                                <img src="{{ Storage::url($item->img_thumbnail) }}">
+                            </div>
+                            <div class="hadding4">
+                                <div class="space16"></div>
+                                <h4><a href="service-details.html" class="font-f-4">{{ $item->english_name }}</a></h4>
+                                <div class="space16"></div>
+                                {{ \Illuminate\Support\Str::limit($item->description, 200) }}
+                                <div class="space16"></div>
+                                <a class="service4-learn-more font-f-2" href="{{ route('school.show', $item->id) }}">Xem
+                                    Thêm
+                                    <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="service4-box" data-aos="fade-up" data-aos-duration="700">
-                        <div class="service4-img img5 img100">
-                            <img src="{{ asset('assets') }}/client/img/image/service4-img3.png" alt="">
-                        </div>
-                        <div class="hadding4">
-                            <div class="space16"></div>
-                            <h4><a href="service-details.html" class="font-f-4">Immigration</a></h4>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Start a new chapter in your life by navigating the immigration process
-                                seamlessly. Our experts will you making your relocation. </p>
-                            <div class="space16"></div>
-                            <a class="service4-learn-more font-f-2" href="service-details.html">Read more <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="service4-box" data-aos="fade-up" data-aos-duration="1100">
-                        <div class="service4-img img5 img100">
-                            <img src="{{ asset('assets') }}/client/img/image/service4-img4.png" alt="">
-                        </div>
-                        <div class="hadding4">
-                            <div class="space16"></div>
-                            <h4><a href="service-details.html" class="font-f-4">Visa Renewals & Extensions</a></h4>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Already living abroad and need to extend your visa? Our team can help
-                                you with visa renewals and extensions, you can continue.</p>
-                            <div class="space16"></div>
-                            <a class="service4-learn-more font-f-2" href="service-details.html">Read more <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="service4-box" data-aos="fade-up" data-aos-duration="1300">
-                        <div class="service4-img img5 img100">
-                            <img src="{{ asset('assets') }}/client/img/image/service4-img5.png" alt="">
-                        </div>
-                        <div class="hadding4">
-                            <div class="space16"></div>
-                            <h4><a href="service-details.html" class="font-f-4">Family & Depended Visas</a></h4>
-                            <div class="space16"></div>
-                            <p>Embark on your educational journey abroad with confidence. Our experienced will help you
-                                secure the right study visa.</p>
-                            <div class="space16"></div>
-                            <a class="service4-learn-more" href="service-details.html">Read more <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="service4-box" data-aos="fade-up" data-aos-duration="700">
-                        <div class="service4-img img5 img100">
-                            <img src="{{ asset('assets') }}/client/img/image/service4-img6.png" alt="">
-                        </div>
-                        <div class="hadding4">
-                            <div class="space16"></div>
-                            <h4><a href="service-details.html" class="font-f-4">Business Visa</a></h4>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Venturing into international business? We facilitate seamless business
-                                travel by offering expert advice on business visas.</p>
-                            <div class="space16"></div>
-                            <a class="service4-learn-more font-f-2" href="service-details.html">Read more <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
         <img class="choose4-shape1 aniamtion-key-2" src="{{ asset('assets') }}/client/img/shapes/hom4-shape2.svg"
@@ -251,37 +162,36 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="hadding4 choose4-hadding">
-                        <span class="font-f-2" data-aos="fade-right" data-aos-duration="700">Why Choose
-                            visafast</span>
+                        <span class="font-f-2" data-aos="fade-right" data-aos-duration="700">Tại sao chọn
+                            MIM</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-right" data-aos-duration="900">Embarking on a visa
-                            journey
-                            is a significant step.</h1>
+                        <h1 class="font-f-4" data-aos="fade-right" data-aos-duration="900">Bắt đầu một chuyến đi du học
+                            là một bước quan trọng.</h1>
                         <div class="space24"></div>
-                        <p class="font-f-2" data-aos="fade-right" data-aos-duration="1100">With countless options
-                            available, it's important to choose a visa consulting partner that aligns with your goals
-                            and can navigate the complexities of the process.</p>
+                        <p class="font-f-2" data-aos="fade-right" data-aos-duration="1100">Với vô số lựa chọn
+                            có sẵn, điều quan trọng là phải chọn một đối tác tư vấn du học phù hợp với mục tiêu của bạn
+                            và có thể giải quyết được những phức tạp của quy trình.</p>
                         <div class="space30"></div>
                         <ul class="choose4-list font-f-2">
                             <li data-aos="fade-right" data-aos-duration="700"><img
                                     src="{{ asset('assets') }}/client/img/icons/check.svg" alt="">
-                                <a href="about.html" class="font-f-4">Expertise & Experience</a>
+                                <a href="about.html" class="font-f-4">Chuyên môn & Kinh nghiệm</a>
                             </li>
                             <li data-aos="fade-right" data-aos-duration="1100"><img
                                     src="{{ asset('assets') }}/client/img/icons/check.svg" alt="">
-                                <a href="about.html" class="font-f-4">Personalized Approach</a>
+                                <a href="about.html" class="font-f-4">Cách tiếp cận cá nhân</a>
                             </li>
                             <li data-aos="fade-right" data-aos-duration="900"><img
                                     src="{{ asset('assets') }}/client/img/icons/check.svg" alt="">
-                                <a href="about.html" class="font-f-4">Proven Track Record</a>
+                                <a href="about.html" class="font-f-4">Thành tích đã được chứng minh</a>
                             </li>
                             <li data-aos="fade-right" data-aos-duration="1200"><img
                                     src="{{ asset('assets') }}/client/img/icons/check.svg" alt="">
-                                <a href="about.html" class="fotn-f-4">Comprehensive Services</a>
+                                <a href="about.html" class="fotn-f-4">Dịch vụ toàn diện</a>
                             </li>
                         </ul>
                         <div class="space5"></div>
-                        <a href="service.html" class="theme-btn9 font-f-4">Explore Our Features</a>
+                        <a href="service.html" class="theme-btn9 font-f-4">Khám phá các tính năng của chúng tôi</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -304,78 +214,6 @@
             </div>
         </div>
     </div>
-
-    <!--=====choose end=======-->
-
-    <!--=====progress start=======-->
-
-    <div class="progress4 sp3 _relative" style="background-color: #F6F6F6;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="choose4-images text-left">
-                        <div class="choose4-img-1 aniamtion-key-2">
-                            <img src="{{ asset('assets') }}/client/img/shapes/choose4-img-shape1.svg" alt="">
-                        </div>
-                        <div class="choose4-img-2 img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/choose4-img.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hadding4 progress4-hadding-all">
-                        <span class="font-f-2">Our Process Works</span>
-                        <div class="space16"></div>
-                        <h1 class="font-f-4">We begin by understanding your goals</h1>
-
-                        <div class="progress-list4">
-                            <div class="progress-list-box">
-                                <div class="progress-list-number">
-                                    <h4><span class="font-f-4">01</span></h4>
-                                </div>
-                                <div class="hadding4 progress4-hadding">
-                                    <h4><a href="#" class="font-f-4">Consultation</a></h4>
-                                    <div class="space8"></div>
-                                    <p class="font-f-2">We begin by understanding your goals, background, and
-                                        preferences.</p>
-                                </div>
-                            </div>
-
-                            <div class="progress-list-box">
-                                <div class="progress-list-number">
-                                    <h4><span class="font-f-4">02</span></h4>
-                                </div>
-                                <div class="hadding4 progress4-hadding">
-                                    <h4><a href="#" class="font-f-4">Tailored Strategy</a></h4>
-                                    <div class="space8"></div>
-                                    <p class="font-f-2">Our experts craft a personalized visa strategy designed to
-                                        maximize your chances of success.</p>
-                                </div>
-                            </div>
-
-                            <div class="progress-list-box">
-                                <div class="progress-list-number">
-                                    <h4><span class="font-f-4">03</span></h4>
-                                </div>
-                                <div class="hadding4 progress4-hadding">
-                                    <h4><a href="#" class="font-f-4">Submission and Follow-Up</a></h4>
-                                    <div class="space8"></div>
-                                    <p class="font-f-2">We ensure your application is submitted accurately and on time.
-                                        We'll also keep you updated on its progress.</p>
-                                </div>
-                            </div>
-                            <div class="space32"></div>
-                            <a href="about.html" class="theme-btn9 font-f-4">Follow Our Steps</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--=====progress end=======-->
-
 
     <!--========== Conversation-start ==========-->
     <div class="sp3 _relative" id="progress" style="background-color: #F6F6F6;">
@@ -427,9 +265,9 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hadding4" data-aos="fade-left" data-aos-duration="700">
-                        <span class="font-f-2">Our Process Works</span>
+                        <span class="font-f-2">Quy trình của chúng tôi hoạt động</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4">We begin by understanding your goals</h1>
+                        <h1 class="font-f-4">Chúng tôi bắt đầu bằng việc hiểu mục tiêu của bạn</h1>
                     </div>
                     <div class="nav progress-list4 flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                         aria-orientation="vertical" data-aos="fade-left" data-aos-duration="1100">
@@ -441,10 +279,10 @@
                                     <h4><span class="font-f-4">01</span></h4>
                                 </div>
                                 <div class="hadding4 progress4-hadding">
-                                    <h4 class="font-f-4">Consultation</h4>
+                                    <h4 class="font-f-4">Tư vấn</h4>
                                     <div class="space8"></div>
-                                    <p class="font-f-2">We begin by understanding your goals, background, and
-                                        preferences.</p>
+                                    <p class="font-f-2">Chúng tôi bắt đầu bằng cách tìm hiểu mục tiêu, hoàn cảnh và
+                                        sở thích của bạn.</p>
                                 </div>
                             </div>
                         </button>
@@ -456,10 +294,11 @@
                                     <h4><span class="font-f-4">02</span></h4>
                                 </div>
                                 <div class="hadding4 progress4-hadding">
-                                    <h4 class="font-f-4">Tailored Strategy</h4>
+                                    <h4 class="font-f-4">Chiến lược phù hợp</h4>
                                     <div class="space8"></div>
-                                    <p class="font-f-2">Our experts craft a personalized visa strategy designed to
-                                        maximize your chances of success.</p>
+                                    <p class="font-f-2">Các chuyên gia của chúng tôi xây dựng chiến lược xin thị thực được
+                                        cá nhân hóa nhằm
+                                        tối đa hóa cơ hội thành công của bạn.</p>
                                 </div>
                             </div>
                         </button>
@@ -471,10 +310,11 @@
                                     <h4><span class="font-f-4">03</span></h4>
                                 </div>
                                 <div class="hadding4 progress4-hadding">
-                                    <h4 class="fotn-f-4">Submission and Follow-Up</h4>
+                                    <h4 class="fotn-f-4">Nộp và theo dõi</h4>
                                     <div class="space8"></div>
-                                    <p class="font-f-2">We ensure your application is submitted accurately and on time.
-                                        We'll also keep you updated on its progress.</p>
+                                    <p class="font-f-2">Chúng tôi đảm bảo đơn đăng ký của bạn được nộp chính xác và đúng
+                                        hạn.
+                                        Chúng tôi cũng sẽ cập nhật cho bạn về tiến độ của đơn.</p>
                                 </div>
                             </div>
                         </button>
@@ -482,7 +322,7 @@
 
                     <div class="space32"></div>
                     <div class="" data-aos="fade-left" data-aos-duration="700">
-                        <a href="service.html" class="theme-btn9 font-f-4">Follow Our Steps</a>
+                        <a href="service.html" class="theme-btn9 font-f-4">Hãy theo dõi các bước của chúng tôi</a>
                     </div>
                 </div>
             </div>
@@ -495,190 +335,6 @@
 
     <!--========== Conversation-end ==========-->
 
-
-
-    <!--=====countrie start=======-->
-
-    <div class="countrie3 sp3 _relative" id="countries">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 m-auto text-center">
-                    <div class="hadding4">
-                        <span class="font-f-2 span" data-aos="fade-up" data-aos-duration="700">Countries We
-                            Offer</span>
-                        <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Visa Consulting Offers a
-                            Range
-                            of Services and Expertise to help Businesses.</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="space30"></div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="countrie3-box" data-aos="fade-up" data-aos-duration="700">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img1.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">United States</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="900">
-                    <div class="countrie3-box">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img2.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">
-                                    Australia</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="countrie3-box" data-aos="fade-up" data-aos-duration="1100">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img3.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">Spain</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="countrie3-box" data-aos="fade-up" data-aos-duration="700">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img4.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">
-                                    Saudi Arabia</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="countrie3-box" data-aos="fade-up" data-aos-duration="1100">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img5.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">Afghanistan</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="countrie3-box" data-aos="fade-up" data-aos-duration="700">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img6.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">
-                                    India</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="countrie3-box" data-aos="fade-up" data-aos-duration="900">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img7.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">
-                                    India</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="countrie3-box" data-aos="fade-up" data-aos-duration="1300">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img8.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">Pakistan</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="countrie3-box" data-aos="fade-up" data-aos-duration="800">
-                        <div class="countrie3-img img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/countrie3-img9.png" alt="">
-                        </div>
-                        <div class="countrie3-hadding">
-                            <h2><a href="countries-details.html" class="font-f-4 weight-600">
-                                    Russia</a></h2>
-                            <div class="space16"></div>
-                            <p class="font-f-2">Welcome to the United States, a land of diverse landscapes, cultures,
-                                and experiences.</p>
-                            <div class="space16"></div>
-                            <a href="countries-details.html" class="w-learn-more font-f-2">Read More <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!--=====countrie end=======-->
-
     <!--=====testimonial start=======-->
 
     <div class="testimonial4 sp3 _relative" id="testimonial" style="background-color: #181A1C;">
@@ -686,11 +342,12 @@
             <div class="row">
                 <div class="col-lg-7 m-auto text-center">
                     <div class="hadding4-w">
-                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Testimonials</span>
+                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Lời chứng thực</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="1100">Our Clients love the we
-                            build
-                            stores experience visa consulting </h1>
+                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="1100">Khách hàng của chúng tôi yêu
+                            thích trải nghiệm cửa hàng
+                            xây dựng
+                            tư vấn du học</h1>
                     </div>
                 </div>
             </div>
@@ -809,9 +466,10 @@
             <div class="row">
                 <div class="col-lg-7 m-auto text-center">
                     <div class="hadding4">
-                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Our team</span>
+                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Đội ngũ của chúng tôi</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Our Expert Team Member
+                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Thành viên nhóm chuyên gia của
+                            chúng tôi
                         </h1>
                     </div>
                 </div>
@@ -934,11 +592,11 @@
             <div class="row">
                 <div class="col-lg-7 m-auto text-center">
                     <div class="hadding4">
-                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Blog & Article</span>
+                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Blog & Bài viết</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Navigating the Visa
-                            Application
-                            Process: A Comprehensive Guide</h1>
+                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Điều hướng Quy trình
+                            Nộp đơn
+                            Visa: Hướng dẫn toàn diện</h1>
                     </div>
                 </div>
             </div>
@@ -1087,7 +745,7 @@
             <div class="row">
                 <div class="col-lg-8 m-auto text-center">
                     <div class="hadding4">
-                        <h1 class="font-f-4">Let's Make Your Visa Journey Easy & Secure Approval Today!</h1>
+                        <h1 class="font-f-4">Hãy để hành trình du học của bạn được dễ dàng và an toàn ngay hôm nay!</h1>
                         <div class="space30"></div>
                     </div>
                     <div class="cta4-subsribe-all _relative">
@@ -1096,7 +754,7 @@
                                 <input type="email" placeholder="Enter Your Email">
                             </div>
                             <div class="cta4-button">
-                                <button type="submit" class="theme-btn9 font-f-4">Subscribe Now</button>
+                                <button type="submit" class="theme-btn9 font-f-4">Đăng ký ngay</button>
                             </div>
                         </form>
                     </div>

@@ -4,16 +4,16 @@
             <div class="col-lg-4 col-sm-6">
                 <div class="single-footer mr50 hadding2">
                     <div class="site-logo home1-site-logo">
-                        <a href="#"><img src="{{ asset('assets') }}/client/img/logo/header-logo4.svg"
-                                alt="" />
+                        <a href="#"><img src="{{ asset('assets') }}/client/img/image/mim.jpg" alt=""
+                                width="50px" height="50px" />
                         </a>
                     </div>
                     <div class="space30"></div>
                     <div class="hadding4">
                         <p class="font-f-2">
-                            At visafast we are committed to transforming your dreams of international exploration
-                            into reality. Our team of seasoned Visa Consultants is dedicated to providing
-                            unparalleled guidance and support throughout your visa application.
+                            Tại MIM, chúng tôi cam kết biến ước mơ khám phá quốc tế của bạn
+                            thành hiện thực. Đội ngũ Tư vấn Visa dày dạn kinh nghiệm của chúng tôi tận tâm cung cấp
+                            sự hướng dẫn và hỗ trợ vô song trong suốt quá trình nộp đơn du học của bạn.
                         </p>
                     </div>
                 </div>
@@ -39,19 +39,19 @@
             <div class="col-lg col-sm-6 col-6 hadding2">
                 <div class="single-footer single-footer4">
                     <h3 class="font-f-2">
-                        Explore
+                        Khám phá
                     </h3>
                     <div>
                         <ul class="font-f-2">
-                            <li><a href="about.html"><span><i class="fa-solid fa-plane"></i></span> About</a>
+                            <li><a href="about.html"><span><i class="fa-solid fa-plane"></i></span> Giới thiệu</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Meet Expert</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Gặp gỡ chuyên gia</a>
                             </li>
-                            <li><a href="blog.html"><span><i class="fa-solid fa-plane"></i></span> Blog</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Countries</a>
+                            <li><a href="blog.html"><span><i class="fa-solid fa-plane"></i></span> Bài viết</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Quốc gia</a>
                             </li>
                             <li><a href="contact.html"><span><i class="fa-solid fa-plane"></i></span>
-                                    Contact</a>
+                                    Liên hệ</a>
                             </li>
                         </ul>
                     </div>
@@ -64,15 +64,15 @@
                     </h3>
                     <div>
                         <ul class="font-f-2">
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Work Visa</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa làm việc</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Students
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa du học
                                     Visa</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Business
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Doanh nghiệp
                                     Visa</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Family Visa</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa gia đình</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Travel Visa</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa du lịch</a>
                             </li>
                         </ul>
                     </div>
@@ -81,11 +81,11 @@
             <div class="col-lg-3 col-sm-6 hadding2">
                 <div class="single-footer-contact single-footer single-footer4">
                     <h3 class="font-f-2">
-                        Get in touch
+                        Liên hệ
                     </h3>
                     <div class="padding-left20">
                         <div class="hadding1">
-                            <p style="color: #181A1C;">2025 Rockledge Dr #130 Rockledge, United States</p>
+                            <p style="color: #181A1C;">2025 Rockledge Dr #130 Rockledge, Hoa Kỳ</p>
                         </div>
 
                         <div class="contact-icon-box2">
@@ -114,7 +114,7 @@
         <div class="row align-items-center copyright2">
             <div class="col-lg-12 text-center hadding1">
                 <p class="font-f-2">
-                    © 2023 Visafast by fleexstudio. All Rights Reserved.
+                    © 2025 MIN. All Rights Reserved.
                 </p>
             </div>
         </div>
