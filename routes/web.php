@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 use App\Http\Controllers\Client\SchoolController;
-=======
 use App\Http\Controllers\Admin\PostController;
->>>>>>> 0d764e5ca0fd97dc32c9348c56a8c04ea754a4b8
 use App\Http\Controllers\Client\ContactFormController as ClientContactFormController;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\Client\PostController as ClientPostController;
