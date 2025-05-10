@@ -50,12 +50,19 @@
             </ul>
         </li>
 
-        <li class="menu-item @yield('menu-item-contact')">
-            <a href="" class="menu-link">
-                <i class='menu-icon tf-icons mdi mdi-card-account-mail-outline'></i>
+        <li class="menu-item @yield('menu-item-post')">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class='menu-icon tf-icons mdi mdi-post'></i>
                 <div data-i18n="Liên Hệ">Liên Hệ</div>
-                <div class="badge bg-danger rounded-pill ms-auto">5</div>
             </a>
+            <ul class="menu-sub">
+                <li class="menu-item @yield('menu-sub-create-post')">
+                    <a href="{{route('contact.index')}}" class="menu-link">
+                        <div data-i18n="Danh Sách Liên Hệ">Danh Sách Liên Hệ</div>
+                    </a>
+                </li>
+              
+            </ul>
         </li>
 
         <li class="menu-item @yield('menu-item-post')">

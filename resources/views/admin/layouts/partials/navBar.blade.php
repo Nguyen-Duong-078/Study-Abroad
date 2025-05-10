@@ -32,12 +32,7 @@
                             <span class="align-middle">Việt Nam</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="dropdown-item" href="javascript:void(0);" data-language="en"
-                            data-text-direction="ltr">
-                            <span class="align-middle">English</span>
-                        </a>
-                    </li>
+                 
                 </ul>
             </li>
             <!--/ Language -->
@@ -207,14 +202,7 @@
                             @endforeach --}}
                         </ul>
                     </li>
-                    <li class="dropdown-menu-footer border-top p-3">
-                        <form action="" method="post">
-                            @csrf
-                            <button class="btn btn-primary w-100">Đọc
-                                tất cả
-                                thông báo</button>
-                        </form>
-                    </li>
+
                 </ul>
             </li>
             <!--/ Notification -->
@@ -240,50 +228,22 @@
                                 </div>
                                 <div class="flex-grow-1">
                                     <h6 class="mb-0"></h6>
-                                    <small class="text-muted">DƯƠNG</small>
+                                    <small class="text-muted">ADMIN</small>
                                 </div>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <div class="dropdown-divider my-0"></div>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="pages-profile-user.html">
 
-                            <span class="align-middle">Hồ sơ của tôi</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="pages-account-settings-account.html">
-                            <i class="mdi mdi-cog-outline me-1 mdi-20px"></i>
-                            <span class="align-middle">Cài đặt</span>
-                        </a>
-                    </li>
+
 
                     <li>
-                        <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="pages-faq.html">
-                            <i class="mdi mdi-help-circle-outline me-1 mdi-20px"></i>
-                            <span class="align-middle">Câu hỏi thường gặp</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="pages-pricing.html">
-                            <i class="mdi mdi-currency-usd me-1 mdi-20px"></i>
-                            <span class="align-middle">Giá cả</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="">
+                        <a class="dropdown-item" href="/">
                             <span class="d-flex align-items-center align-middle">
                                 <i class="mdi mdi-car-brake-low-pressure me-1 mdi-20px"></i>
                                 <span class="flex-grow-1 align-middle ms-1">Trang người dùng</span>
                                 <span
-                                    class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">5</span>
+                                    class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20"></span>
                             </span>
                         </a>
                     </li>
@@ -293,10 +253,14 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="" target="_blank">
+                        <a class="dropdown-item" href="javascript:void(0)" onclick="document.getElementById('logout-form').submit();" >
                             <i class="mdi mdi-logout me-1 mdi-20px"></i>
-                            <span class="align-middle">Log Out</span>
+                            Đăng xuất
                         </a>
+
+                        <form id="logout-form" action="{{ route('auth.logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
                     </li>
                 </ul>
             </li>

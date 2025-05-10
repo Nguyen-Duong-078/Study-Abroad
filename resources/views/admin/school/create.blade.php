@@ -12,6 +12,16 @@
 @endsection
 
 @section('content')
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <strong>Đã xảy ra lỗi!</strong>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
     <div class="container-xxl flex-grow-1 container-p-y">
         <h4 class="py-3 mb-4">
             <span class="text-muted fw-light">Trường học /</span><span> Thêm mới trường học</span>
@@ -23,6 +33,9 @@
                 <div class="col-md-6">
                     <label class="form-label">Tên tiếng Hàn</label>
                     <input type="text" class="form-control" name="korean_name" required>
+                    @error('korean_name')
+    <small class="text-danger">{{ $message }}</small>
+@enderror
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Tên tiếng Anh</label>

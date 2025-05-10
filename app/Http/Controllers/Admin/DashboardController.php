@@ -3,16 +3,18 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\School;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class   DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function dashboard()
     {
-        return view('admin.dashboard');
+        $schools = School::with('categorie')->latest()->paginate(10);
+        return view('admin.school.index', compact('schools'));
     }
 
     /**

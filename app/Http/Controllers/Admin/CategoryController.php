@@ -26,10 +26,18 @@ class CategoryController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
+
     {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'is_active' => 'boolean',
+        ],[
+            'name.required' => 'Tên danh mục không được để trống',
+            'is_active.boolean' => 'Trạng thái không hợp lệ',
+        ]);
         $data = $request->only(['name', 'is_active']);
         Categorie::create($data);
-    
+
         return redirect()->route('categories.create')->with('success', 'Them thanh cong !');
 
     }

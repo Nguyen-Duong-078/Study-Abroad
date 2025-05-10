@@ -31,7 +31,7 @@
                                     </ul>
                                   </li>
                                 <li><a href="#progress">Bài viết</a></li>
-                                <li><a href="#blog">Liên hệ</a></li>
+                                <li><a href="/lien-he">Liên hệ</a></li>
                             </ul>
                         </div>
                         <div class="home2-header-buttons">
@@ -43,7 +43,7 @@
 
                                     </select>
                                 </div>
-                                <a href="contact.html" class="theme-btn9 font-f-4">Đặt lịch tư vấn</a>
+                                <a href="/lien-he" class="theme-btn9 font-f-4">Đặt lịch tư vấn</a>
                             </div>
                         </div>
                         <div class="mobile-menu-bar d-lg-none">

@@ -29,13 +29,51 @@ class SchoolController extends Controller
      */
     public function store(Request $request)
     {
-       
-        $request->validate([
-            'categorie_id' => 'required|exists:categories,id',
-            'korean_name' => 'required|string|max:255',
-            'english_name' => 'required|string|max:255',
-            'img_thumbnail' => 'required|image|max:2048',
-        ]);
+
+      $request->validate([
+        'categorie_id' => 'required|exists:categories,id',
+        'korean_name' => 'required|string|max:255',
+        'english_name' => 'required|string|max:255',
+        'number_of_students' => 'required|integer',
+        'tuition' => 'required|string',
+        'year_of' => 'required|integer',
+        'address' => 'required|string',
+        'description' => 'required|string',
+        'dormitory' => 'required|string',
+        'website' => 'required|url',
+        'under' => 'required|string',
+        'content' => 'required|string',
+        'img_thumbnail' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+    ],[
+        'categorie_id.required' => 'Danh mục không được để trống',
+        'korean_name.required' => 'Tên tiếng Hàn không được để trống',
+        'english_name.required' => 'Tên tiếng Anh không được để trống',
+        'number_of_students.required' => 'Số lượng học sinh không được để trống',
+        'tuition.required' => 'Học phí không được để trống',
+        'year_of.required' => 'Năm thành lập không được để trống',
+        'address.required' => 'Địa chỉ không được để trống',
+        'description.required' => 'Mô tả không được để trống',
+        'dormitory.required' => 'Ký túc xá không được để trống',
+        'website.required' => 'Website không được để trống',
+        'under.required' => 'Thông tin thêm không được để trống',
+        'content.required' => 'Nội dung không được để trống',
+        'img_thumbnail.required' => 'Ảnh thumbnail không được để trống',
+        'img_thumbnail.image' => 'Ảnh thumbnail không hợp lệ',
+        'img_thumbnail.mimes' => 'Ảnh thumbnail phải là định dạng jpeg, png, jpg, gif, svg',
+        'img_thumbnail.max' => 'Ảnh thumbnail không được lớn hơn 2MB',
+        'categorie_id.exists' => 'Danh mục không tồn tại',
+        'korean_name.string' => 'Tên tiếng Hàn không hợp lệ',
+        'english_name.string' => 'Tên tiếng Anh không hợp lệ',
+        'number_of_students.integer' => 'Số lượng học sinh không hợp lệ',
+        'tuition.string' => 'Học phí không hợp lệ',
+        'year_of.integer' => 'Năm thành lập không hợp lệ',
+        'address.string' => 'Địa chỉ không hợp lệ',
+        'description.string' => 'Mô tả không hợp lệ',
+        'dormitory.string' => 'Ký túc xá không hợp lệ',
+        'website.url' => 'Website không hợp lệ',
+        'under.string' => 'Thông tin thêm không hợp lệ',
+        'content.string' => 'Nội dung không hợp lệ',
+    ]);
         $imagePath = $request->file('img_thumbnail')->store('thumbnails', 'public');
 
     $school = $request->only([

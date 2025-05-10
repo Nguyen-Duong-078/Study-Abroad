@@ -1,12 +1,26 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\SchoolController;
 use Illuminate\Support\Facades\Route;
 
+
+
+Route::prefix('auth')
+->name('auth.')
+->group(function () {
+
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('showLoginForm');
+Route::post('/Login', [LoginController::class, 'login'])->name('login');
+Route::post('/Logout', [LoginController::class, 'logout'])->name('logout');
+
+});
 Route::prefix('admin')
-    ->group(function () {
+->middleware('auth') ->group(function () {
+
         Route::get('/', [DashboardController::class, 'dashboard'])->name('dashboard');
         Route::prefix('categories')
         ->name('categories.')
@@ -30,5 +44,12 @@ Route::prefix('admin')
         Route::delete('/schools/{id}', [SchoolController::class, 'destroy'])->name('destroy');
     });
 
+Route::prefix('contact')
+        ->name('contact.')
+        ->group(function () {
+    Route::get('/contacts', [ContactController::class, 'index'])->name('index');
+    Route::get('/contacts/{id}', [ContactController::class, 'show'])->name('show');
+    Route::post('/contacts/{id}/mark-read', [ContactController::class, 'markAsRead'])->name('markRead');
+});
     });
 
