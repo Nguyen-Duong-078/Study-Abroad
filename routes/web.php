@@ -1,8 +1,13 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\Client\SchoolController;
+=======
+use App\Http\Controllers\Admin\PostController;
+>>>>>>> 0d764e5ca0fd97dc32c9348c56a8c04ea754a4b8
 use App\Http\Controllers\Client\ContactFormController as ClientContactFormController;
 use App\Http\Controllers\Client\HomeController;
+use App\Http\Controllers\Client\PostController as ClientPostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactFormController;
 
@@ -20,3 +25,10 @@ Route::get('/study_abroad/famous_industry', [HomeController::class, 'famous_indu
 Route::get('/lien-he', [ClientContactFormController::class, 'showForm'])->name('contact.form');
 Route::post('/lien-he', [ClientContactFormController::class, 'submitForm'])->name('contact.submit');
 Route::get('/lien-he/cam-on', [ClientContactFormController::class, 'thank'])->name('contact.thankyou');
+
+
+Route::get('/Bai-viet', [ClientPostController::class, 'index'])->name('posts.index');
+Route::get('/bai-viet/{id}', [ClientPostController::class, 'show'])->name('client.posts.show');
+
+
+

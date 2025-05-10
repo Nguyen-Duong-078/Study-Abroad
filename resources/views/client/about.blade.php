@@ -175,7 +175,7 @@
 
 
                         <div class="space32"></div>
-                        <a href="contact.html" class="theme-btn9 font-f-7">Tư Vấn Ngay</a>
+                        <a href="/lien-he" class="theme-btn9 font-f-7">Tư Vấn Ngay</a>
 
                     </div>
                 </div>

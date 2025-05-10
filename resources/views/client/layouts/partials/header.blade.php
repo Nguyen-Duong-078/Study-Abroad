@@ -29,8 +29,13 @@
                                         <li><a href="study_abroad/visa">VISA</a></li>
                                         <li><a href="/study_abroad/famous_industry">Top ngành học</a></li>
                                     </ul>
+<<<<<<< HEAD
                                 </li>
                                 <li><a href="#progress">Bài viết</a></li>
+=======
+                                  </li>
+                                <li><a href="/Bai-viet">Bài viết</a></li>
+>>>>>>> 0d764e5ca0fd97dc32c9348c56a8c04ea754a4b8
                                 <li><a href="/lien-he">Liên hệ</a></li>
                             </ul>
                         </div>
