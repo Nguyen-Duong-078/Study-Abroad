@@ -11,6 +11,7 @@ use App\Http\Controllers\ContactFormController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/school/{id}', [SchoolController::class, 'school'])->name('school.show');
+Route::get('/schools', [SchoolController::class, 'schools'])->name('schools');
 
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/study_abroad/overview', [HomeController::class, 'overview']);

@@ -145,6 +145,12 @@
                     </div>
                 @endforeach
             </div>
+            <div class="space40"></div>
+            <div class="row">
+                <div class="col-lg-12 m-auto text-center" data-aos="fade-up" data-aos-duration="700">
+                    <a href="{{ route('schools') }}" class="theme-btn9 font-f-4">Xem toàn bộ trường học</a>
+                </div>
+            </div>
         </div>
         <img class="choose4-shape1 aniamtion-key-2" src="{{ asset('assets') }}/client/img/shapes/hom4-shape2.svg"
             alt="">

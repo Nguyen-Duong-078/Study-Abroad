@@ -21,7 +21,7 @@
                             <ul class="font-f-4">
                                 <li><a href="/">Trang Chủ</a></li>
                                 <li><a href="/about">Giới thiệu</a></li>
-                                <li><a href="#schools">Tìm Trường</a></li>
+                                <li><a href="{{ route('schools') }}">Tìm Trường</a></li>
                                 <li class="has-dropdown has-dropdown1"><a href="team.html">Du học cần biết</a>
                                     <ul class="sub-menu">
                                         <li><a href="study_abroad/overview">Tổng Quan</a></li>
