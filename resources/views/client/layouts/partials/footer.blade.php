@@ -43,14 +43,13 @@
                     </h3>
                     <div>
                         <ul class="font-f-2">
-                            <li><a href="about.html"><span><i class="fa-solid fa-plane"></i></span> Giới thiệu</a>
+                            <li><a href="/about"><span><i class="fa-solid fa-plane"></i></span> Giới thiệu</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Gặp gỡ chuyên gia</a>
+
+                            <li><a href="/Bai-viet"><span><i class="fa-solid fa-plane"></i></span> Bài viết</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Du Học</a>
                             </li>
-                            <li><a href="blog.html"><span><i class="fa-solid fa-plane"></i></span> Bài viết</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Quốc gia</a>
-                            </li>
-                            <li><a href="contact.html"><span><i class="fa-solid fa-plane"></i></span>
+                            <li><a href="/lien-he"><span><i class="fa-solid fa-plane"></i></span>
                                     Liên hệ</a>
                             </li>
                         </ul>
@@ -60,19 +59,19 @@
             <div class="col-lg col-sm-6 col-6 hadding2">
                 <div class="single-footer single-footer4">
                     <h3 class="font-f-2">
-                        Visa
+                        MIM
                     </h3>
                     <div>
                         <ul class="font-f-2">
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa làm việc</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Chuyên môn & Kinh nghiệm</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa du học
-                                    Visa</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Doanh nghiệp
-                                    Visa</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa gia đình</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Cách tiếp cận cá nhân
+                                    </a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Thành tích  chứng minh
+                                    </a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Dịch vụ toàn diện</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa du lịch</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Thân Thiệt</a>
                             </li>
                         </ul>
                     </div>

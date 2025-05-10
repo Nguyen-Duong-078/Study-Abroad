@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
+use App\Models\Post;
 use App\Models\School;
 use Illuminate\Http\Request;
 
@@ -11,8 +12,9 @@ class HomeController extends Controller
     const PATH_VIEW = 'client.';
     public function index()
     {
+        $posts = Post::latest()->take(3)->get();
         $schools = School::query()->get();
-        return view('client.home', compact('schools'));
+        return view('client.home', compact('schools','posts'));
     }
     public function about()
     {

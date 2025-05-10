@@ -242,7 +242,7 @@
                         <div class="col-lg-5">
                             <div class="cta2-form">
 
-                                <button class="theme-btn9 cta2-button font-f-7">Tư Vấn Ngay</button>
+                                <a href="/lien-he"><button class="theme-btn9 cta2-button font-f-7">Tư Vấn Ngay</button></a>
                             </div>
                         </div>
                     </div>
