@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Client\ContactFormController as ClientContactFormController;
 use App\Http\Controllers\Client\HomeController;
+use App\Http\Controllers\Client\PostController as ClientPostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactFormController;
 
@@ -17,3 +19,10 @@ Route::get('/study_abroad/famous_industry',[HomeController::class,'famous_indust
 Route::get('/lien-he', [ClientContactFormController::class, 'showForm'])->name('contact.form');
 Route::post('/lien-he', [ClientContactFormController::class, 'submitForm'])->name('contact.submit');
 Route::get('/lien-he/cam-on', [ClientContactFormController::class, 'thank'])->name('contact.thankyou');
+
+
+Route::get('/Bai-viet', [ClientPostController::class, 'index'])->name('posts.index');
+Route::get('/bai-viet/{id}', [ClientPostController::class, 'show'])->name('client.posts.show');
+
+
+

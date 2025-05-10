@@ -61,7 +61,7 @@
                         <div data-i18n="Danh Sách Liên Hệ">Danh Sách Liên Hệ</div>
                     </a>
                 </li>
-              
+
             </ul>
         </li>
 
@@ -78,11 +78,28 @@
                 </li>
                 <li class="menu-item @yield('menu-sub-index-post')">
                     <a href="{{route('schools.index')}}" class="menu-link">
-                        <div data-i18n="Danh sách bài viết">Danh sách bài viết</div>
+                        <div data-i18n="Danh sách bài viết">Danh sách Trường Học</div>
                     </a>
                 </li>
             </ul>
         </li>
+        <li class="menu-item @yield('menu-item-post')">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class='menu-icon tf-icons mdi mdi-post'></i>
+                <div data-i18n="Bài viết">Bài viết</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item @yield('menu-sub-create-post')">
+                    <a href="{{route('posts.create')}}" class="menu-link">
+                        <div data-i18n="Thêm bài viết">Thêm bài viết</div>
+                    </a>
+                </li>
+                <li class="menu-item @yield('menu-sub-index-post')">
+                    <a href="{{route('posts.index')}}" class="menu-link">
+                        <div data-i18n="Danh sách bài viết">Danh sách bài viết</div>
+                    </a>
+                </li>
+            </ul>
 
     </ul>
 </aside>

@@ -18,4 +18,8 @@ class Categorie extends Model
     {
         return $this->hasMany(School::class);
     }
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }

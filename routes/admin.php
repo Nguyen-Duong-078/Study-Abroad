@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\SchoolController;
 use Illuminate\Support\Facades\Route;
 
@@ -50,6 +51,18 @@ Route::prefix('contact')
     Route::get('/contacts', [ContactController::class, 'index'])->name('index');
     Route::get('/contacts/{id}', [ContactController::class, 'show'])->name('show');
     Route::post('/contacts/{id}/mark-read', [ContactController::class, 'markAsRead'])->name('markRead');
+});
+
+Route::prefix('posts')
+->name('posts.')
+->group(function () {
+Route::get('/', [PostController::class, 'index'])->name('index');
+Route::get('/create', [PostController::class, 'create'])->name('create');
+Route::post('/store', [PostController::class, 'store'])->name('store');
+Route::get('/show/{id}', [PostController::class, 'show'])->name('show');
+Route::get('/edit/{id}', [PostController::class, 'edit'])->name('edit');
+Route::put('/update/{id}', [PostController::class, 'update'])->name('update');
+Route::delete('/delete/{id}', [PostController::class, 'destroy'])->name('destroy');
 });
     });
 
