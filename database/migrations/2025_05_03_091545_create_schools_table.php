@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->foreignIdFor(Categorie::class)->constrained();
             $table->string('korean_name');
             $table->string('english_name');
+            $table->string('slug')->unique();
             $table->string('img_thumbnail');
             $table->integer('year_of');
             $table->integer('number_of_students');
