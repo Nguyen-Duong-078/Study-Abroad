@@ -13,6 +13,7 @@ class School extends Model
         'categorie_id',
         'korean_name',
         'english_name',
+        'slug',
         'img_thumbnail',
         'year_of',
         'number_of_students',
