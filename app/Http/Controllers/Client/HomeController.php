@@ -12,9 +12,11 @@ class HomeController extends Controller
     const PATH_VIEW = 'client.';
     public function index()
     {
+
         $posts = Post::latest()->take(3)->get();
-        $schools = School::query()->get();
+        $schools = School::query()->take(3)->get();
         return view('client.home', compact('schools','posts'));
+
     }
     public function about()
     {

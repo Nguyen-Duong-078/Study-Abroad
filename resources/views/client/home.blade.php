@@ -25,8 +25,7 @@
                 <div class="col-lg-6">
                     <div class="main-hadding4">
                         <div class="main-span4">
-                            <h1 class="font-f-4">Trao quyền cho ước mơ của bạn với dịch vụ tư vấn du học được thiết kế
-                                riêng</h1>
+                            <h1 class="font-f-4">Trao quyền cho ước mơ của bạn với dịch vụ tư vấn du học cho MIM</h1>
                             <div class="space16"></div>
                             <p class="font-f-2">Duyệt đơn xin du học dễ dàng - Đối tác đáng tin cậy của bạn trong việc
                                 Đạt được ước mơ của bạn Cho dù bạn đang theo đuổi giáo dục, phát triển sự nghiệp hay một
@@ -135,8 +134,7 @@
                     <div class="hadding4">
                         <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Dịch vụ chúng tôi cung cấp</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Global Visa Navigator Con đường của
-                            bạn đến với chuyến du học liền mạch</h1>
+                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Các Trường Đại Học</h1>
                     </div>
                 </div>
             </div>
@@ -150,7 +148,7 @@
                             </div>
                             <div class="hadding4">
                                 <div class="space16"></div>
-                                <h4><a href="service-details.html" class="font-f-4">{{ $item->english_name }}</a></h4>
+                                <h4><a href="{{ route('school.show', $item->id) }}" class="font-f-4">{{ $item->english_name }}</a></h4>
                                 <div class="space16"></div>
                                 {{ \Illuminate\Support\Str::limit($item->description, 200) }}
                                 <div class="space16"></div>
@@ -161,6 +159,12 @@
                         </div>
                     </div>
                 @endforeach
+            </div>
+            <div class="space40"></div>
+            <div class="row">
+                <div class="col-lg-12 m-auto text-center" data-aos="fade-up" data-aos-duration="700">
+                    <a href="{{ route('schools') }}" class="theme-btn9 font-f-4">Xem toàn bộ trường học</a>
+                </div>
             </div>
         </div>
         <img class="choose4-shape1 aniamtion-key-2" src="{{ asset('assets') }}/client/img/shapes/hom4-shape2.svg"

@@ -293,9 +293,11 @@
                             </div>
                         </div>
                     </div>
+                       </div>
+                          </div>
                 </div>
             </div>
-            <div class="cta2" style="background-color: #462ab4;">
+         <div class="cta2" style="background-color: #462ab4;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-7">
@@ -303,16 +305,14 @@
                                 <h1>Chúng tôi cam kết làm cho quá trình xin thị thực của bạn
                                 </h1>
                                 <div class="space16"></div>
-                                <p>M.I.M không chỉ Đào Tạo; họ thực sự quan tâm đến sự thành công của khách hàng.
-                                    Chuyên gia tư vấn của tôi không chỉ giúp tư vấn.
+                                <p>M.I.M không chỉ Đào Tạo; họ thực sự quan tâm đến sự thành công của khách hàng. Chuyên gia tư vấn của tôi không chỉ giúp tư vấn.
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-5">
                             <div class="cta2-form">
 
-                               <a href="/lien-he"><button class="theme-btn9 cta2-button font-f-7">Tư Vấn Ngay</button></a>
-                            </div>
+                                <a href="/lien-he"><button class="theme-btn9 cta2-button font-f-7">Tư Vấn Ngay</button></a>
                             </div>
                         </div>
                     </div>

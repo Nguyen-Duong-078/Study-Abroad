@@ -71,7 +71,7 @@
                             <p class="limit-line">{{ Str::limit($post->summary, 150) }}</p>
                             <div class="space24"></div>
                             <a class="service4-learn-more font-f-2" href="{{ route('client.posts.show', $post->id) }}">
-                                Read more <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Xem Thêm <span><i class="fa-solid fa-arrow-right"></i></span>
                             </a>
                         </div>
                     </div>

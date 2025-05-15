@@ -21,13 +21,13 @@
                             <ul class="font-f-4">
                                 <li><a href="/">Trang Chủ</a></li>
                                 <li><a href="/about">Giới thiệu</a></li>
-                                <li><a href="#schools">Tìm Trường</a></li>
-                                <li class="has-dropdown has-dropdown1"><a href="team.html">Du học cần biết</a>
+                                <li><a href="{{ route('schools') }}">Tìm Trường</a></li>
+                                <li class="has-dropdown has-dropdown1"><a href="#">Du học cần biết</a>
                                     <ul class="sub-menu">
-                                        <li><a href="study_abroad/overview">Tổng Quan</a></li>
-                                        <li><a href="study_abroad/expense">Chi Phí</a></li>
-                                        <li><a href="study_abroad/visa">VISA</a></li>
-                                        <li><a href="/study_abroad/famous_industry">Top ngành học</a></li>
+                                        <li><a href="{{ route('study_abroad.overview') }}">Tổng Quan</a></li>
+                                        <li><a href="{{ route('study_abroad.expense') }}">Chi Phí</a></li>
+                                        <li><a href="{{ route('study_abroad.visa') }}">VISA</a></li>
+                                        <li><a href="{{ route('study_abroad.famous_industry') }}">Top ngành học</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/Bai-viet">Bài viết</a></li>
@@ -39,7 +39,7 @@
                                 <div class="select-countrie">
                                     <select class="select-countries">
                                         <option value="">VN</option>
-                                        <option value="">EN</option>
+
 
                                     </select>
                                 </div>
@@ -269,7 +269,8 @@
 
     <!-- Contact Options -->
     <div class="contact-options" id="contact-options">
-        <a href="https://m.me/yourpage" target="_blank">
+        <a href="https://www.facebook.com/profile.php?id=61576280246030&mibextid=wwXIfr&rdid=90dmrsktopicVzc4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16QvMJB8K7%2F%3Fmibextid%3DwwXIfr#"
+            target="_blank">
             <img class="me-1"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" />
             Facebook
@@ -278,9 +279,9 @@
             <img class="me-1" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" />
             Zalo
         </a>
-        <a href="tel:0942209198">
+        <a href="tel:0398082228">
             <img class="me-1" src="https://cdn-icons-png.flaticon.com/512/597/597177.png" />
-            0942.209.198
+            0398082228
         </a>
     </div>
 </div>

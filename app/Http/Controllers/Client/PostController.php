@@ -25,5 +25,4 @@ class PostController extends Controller
     return view('client.posts.show', compact('post','relatedPosts'));
 }
 
-
 }

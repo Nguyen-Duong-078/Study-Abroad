@@ -11,12 +11,14 @@ use App\Http\Controllers\ContactFormController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/school/{id}', [SchoolController::class, 'school'])->name('school.show');
+Route::get('/schools', [SchoolController::class, 'schools'])->name('schools');
+Route::get('/schools/search', [SchoolController::class, 'search'])->name('schools.search');
 
-Route::get('/about', [HomeController::class, 'about']);
-Route::get('/study_abroad/overview', [HomeController::class, 'overview']);
-Route::get('/study_abroad/expense', [HomeController::class, 'expense']);
-Route::get('/study_abroad/visa', [HomeController::class, 'visa']);
-Route::get('/study_abroad/famous_industry', [HomeController::class, 'famous_industry']);
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/study_abroad/overview', [HomeController::class, 'overview'])->name('study_abroad.overview');
+Route::get('/study_abroad/expense', [HomeController::class, 'expense'])->name('study_abroad.expense');
+Route::get('/study_abroad/visa', [HomeController::class, 'visa'])->name('study_abroad.visa');
+Route::get('/study_abroad/famous_industry', [HomeController::class, 'famous_industry'])->name('study_abroad.famous_industry');
 
 
 Route::get('/lien-he', [ClientContactFormController::class, 'showForm'])->name('contact.form');
