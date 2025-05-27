@@ -9,7 +9,7 @@
     <!--=====TITLE=======-->
     <title>DU HỌC HÀN QUỐC</title>
     <!--=====FAV ICON=======-->
-    <link rel="shortcut icon" href="{{ asset('assets') }}/client/img/image/mim.jpg"/>    
+    <link rel="shortcut icon" href="{{ asset('assets') }}/client/img/image/logo-web.png" />
 
     <!--=====CSS=======-->
     @include('client.layouts.partials.style')

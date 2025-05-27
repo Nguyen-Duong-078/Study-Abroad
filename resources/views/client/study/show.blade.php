@@ -52,7 +52,7 @@
                             </div>
                         </article>
                         <article>
-                            <div class="img5 img100">
+                            <div class="hadding2">
                                 <img src="{{ Storage::url($school->img_thumbnail) }}" alt="">
                                 <p class="text-center">{{ $school->under }}</p>
                             </div>
@@ -138,26 +138,27 @@
         </div>
     </div> --}}
 
-    <div class="cta2" style="background-color: #13AAA1;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <div class="cta2-hadding2">
-                        <h1>Chúng tôi cam kết làm cho quá trình du học của bạn</h1>
-                        <div class="space16"></div>
-                        <p>Visa Consulting không chỉ xử lý giấy tờ; họ thực sự quan tâm đến sự thành công của khách hàng.
-                            Chuyên gia tư vấn của tôi không chỉ hỗ trợ tư vấn xin thị thực.</p>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="cta2-form">
-                        <div class="cta2-input">
-                            <input type="Enter Your Email" placeholder="Nhập địa chỉ Email">
+     <div class="cta2" style="background-color: #462ab4;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="cta2-hadding2">
+                                <h1>Chúng tôi cam kết làm cho quá trình xin thị thực của bạn
+                                </h1>
+                                <div class="space16"></div>
+                                <p>M.I.M không chỉ Đào Tạo; họ thực sự quan tâm đến sự thành công của khách hàng.
+                                    Chuyên gia tư vấn của tôi không chỉ giúp tư vấn.
+                                </p>
+                            </div>
                         </div>
-                        <button class="theme-btn5 cta2-button font-f-7">Đăng ký ngay</button>
+                        <div class="col-lg-5">
+                            <div class="cta2-form">
+
+                               <a href="/lien-he"><button class="theme-btn9 cta2-button font-f-7">Tư Vấn Ngay</button></a>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 @endsection

@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-lg-12 m-auto text-center">
                     <div class="page-hero-hadding">
-                        <h1>Giới thiệu</h1>
+                        <h1>Bài Viết </h1>
                         <div class="space16"></div>
                         <div class="page-hero-p">
                             <a href="/">Trang chủ</a>
@@ -48,7 +48,10 @@
                     <div class="blog4-box" data-aos="fade-up" data-aos-duration="700">
                         <div class="blog4-img-box _relative">
                             <div class="blog4-img img100">
-                                <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="">
+                               <div style="width: 100%; height: 250px; overflow: hidden; border-radius: 10px;">
+    <img src="{{ asset('storage/' . $post->thumbnail) }}" alt="{{ $post->title }}"
+         style="width: 100%; height: 100%; object-fit: cover;">
+</div>
                             </div>
                             <div class="blog4-date">
                                 <a href="#" class="font-f-4">{{ $post->created_at->format('d') }}</a>
@@ -68,7 +71,7 @@
                             <p class="limit-line">{{ Str::limit($post->summary, 150) }}</p>
                             <div class="space24"></div>
                             <a class="service4-learn-more font-f-2" href="{{ route('client.posts.show', $post->id) }}">
-                                Read more <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Xem Thêm <span><i class="fa-solid fa-arrow-right"></i></span>
                             </a>
                         </div>
                     </div>
@@ -82,7 +85,7 @@
             </div>
         </div>
         <div class="space40"></div>
-        
+
     </div>
 
 </div>

@@ -24,7 +24,9 @@
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61576280246030&mibextid=wwXIfr&rdid=90dmrsktopicVzc4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16QvMJB8K7%2F%3Fmibextid%3DwwXIfr#"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -43,14 +45,13 @@
                     </h3>
                     <div>
                         <ul class="font-f-2">
-                            <li><a href="about.html"><span><i class="fa-solid fa-plane"></i></span> Giới thiệu</a>
+                            <li><a href="/about"><span><i class="fa-solid fa-plane"></i></span> Giới thiệu</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Gặp gỡ chuyên gia</a>
+
+                            <li><a href="/Bai-viet"><span><i class="fa-solid fa-plane"></i></span> Bài viết</a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Du Học</a>
                             </li>
-                            <li><a href="blog.html"><span><i class="fa-solid fa-plane"></i></span> Bài viết</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Quốc gia</a>
-                            </li>
-                            <li><a href="contact.html"><span><i class="fa-solid fa-plane"></i></span>
+                            <li><a href="/lien-he"><span><i class="fa-solid fa-plane"></i></span>
                                     Liên hệ</a>
                             </li>
                         </ul>
@@ -60,19 +61,20 @@
             <div class="col-lg col-sm-6 col-6 hadding2">
                 <div class="single-footer single-footer4">
                     <h3 class="font-f-2">
-                        Visa
+                        Chúng tôi
                     </h3>
                     <div>
                         <ul class="font-f-2">
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa làm việc</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Chuyên môn & Kinh
+                                    nghiệm</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa du học
-                                    Visa</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Doanh nghiệp
-                                    Visa</a></li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa gia đình</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Cách tiếp cận cá nhân
+                                </a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Thành tích chứng minh
+                                </a></li>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Dịch vụ toàn diện</a>
                             </li>
-                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Visa du lịch</a>
+                            <li><a href="#"><span><i class="fa-solid fa-plane"></i></span> Thân Thiệt</a>
                             </li>
                         </ul>
                     </div>
@@ -85,7 +87,8 @@
                     </h3>
                     <div class="padding-left20">
                         <div class="hadding1">
-                            <p style="color: #181A1C;">2025 Rockledge Dr #130 Rockledge, Hoa Kỳ</p>
+                            <p style="color: #181A1C;">Lô 14 N06 Đường Thanh Niên,Phường Dĩnh Kế,Thành Phố Bắc
+                                Giang,Tỉnh Bắc Giang</p>
                         </div>
 
                         <div class="contact-icon-box2">
@@ -93,7 +96,7 @@
                                 <img src="{{ asset('assets') }}/client/img/icons/contact4-icon2.svg" alt="">
                             </div>
                             <div class="contact-icon-h">
-                                <a href="tel:921-888-0022" class="font-f-2">921-888-0022</a>
+                                <a href="tel:921-888-0022" class="font-f-2">Duhocmim@gmail.com </a>
                             </div>
                         </div>
 
@@ -102,7 +105,7 @@
                                 <img src="{{ asset('assets') }}/client/img/icons/contact4-icon1.svg" alt="">
                             </div>
                             <div class="contact-icon-h">
-                                <a href="mailto:example@visafast.com" class="font-f-2">example@visafast.com</a>
+                                <a href="mailto:example@visafast.com" class="font-f-2">039.808.2228</a>
                             </div>
                         </div>
                     </div>
@@ -114,16 +117,9 @@
         <div class="row align-items-center copyright2">
             <div class="col-lg-12 text-center hadding1">
                 <p class="font-f-2">
-                    © 2025 MIN. All Rights Reserved.
+                    © 2025 MIN. Bảo lưu mọi quyền.
                 </p>
             </div>
         </div>
     </div>
 </footer>
-<div class="scroll-top">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-            style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
-        </path>
-    </svg>
-</div>

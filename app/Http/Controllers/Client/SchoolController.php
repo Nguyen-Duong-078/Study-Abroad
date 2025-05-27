@@ -28,4 +28,11 @@ class SchoolController extends Controller
         return view('client.study.school', compact('schools', 'new', 'random'));
 
     }
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+        $schools = School::where('english_name', 'LIKE', "%{$query}%")->paginate(6);
+
+        return view('client.study.school', compact('schools', 'query'));
+    }
 }

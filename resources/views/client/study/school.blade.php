@@ -1,18 +1,64 @@
 @extends('client.layouts.master')
 @section('content')
-    <!--=====pages hero start=======-->
 
+    <!--=====pages hero start=======-->
+<style>
+   .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Adjust max-width for desired form width */
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px 0 0 30px; /* Rounded left edges */
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #462ab4; /* Change color to your preferred */
+    color: #fff;
+    border: none;
+    border-radius: 0 30px 30px 0; /* Rounded right edges */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #3c1f94; /* Darker shade on hover */
+}
+
+.search-input:focus {
+    border-color: #462ab4; /* Highlight border color when focused */
+}
+
+    }
+</style>
     <div class="page-hero-area _relative" style="background-image: url({{ asset('assets') }}/client/img/bg/page-bg.png);">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 m-auto text-center">
                     <div class="page-hero-hadding">
-                        <h1>School</h1>
+                        <h1>Trường Học</h1>
                         <div class="space16"></div>
                         <div class="page-hero-p">
                             <a href="/">Trang Chủ</a>
                             <span><i class="fa-solid fa-angle-right"></i></span>
-                            <p>School</p>
+                            <p>Trường Học</p>
                         </div>
                     </div>
                 </div>
@@ -33,48 +79,28 @@
 
     <!--=====blog post start=======-->
 
+
     <div class="blog-post-all sp3">
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-6">
-                    <div class="single-blog-post">
-                        <div class="blog-post-img img100i img5">
-                            <img src="{{ Storage::url($new->img_thumbnail) }}" alt="">
-                        </div>
-                        <div class="space16"></div>
-                        <ul class="blog-post-icons">
-                            <li><a href="#"><img src="{{ asset('assets') }}/client/img/icons/blog-post-icon1.svg"
-                                        alt="">{{ $new->created_at->format('H:i | d/m/Y') }}
-                                </a></li>
-                        </ul>
-                        <div class="space16"></div>
-                        <div class="hadding2">
-                            <h3><a href="{{ route('school.show', $new->id) }}">{{ $new->english_name }}</a></h3>
-                            <div class="space8"></div>
-                            <p>{{ \Illuminate\Support\Str::limit($new->description, 106) }}</p>
-                        </div>
-                    </div>
+            <div class="col-lg-7 m-auto text-center">
+                <div class="hadding4">
+                    <span class="font-f-2" data-aos="fade-up" data-aos-duration="400">Trường Học</span>
+                    <div class="space16"></div>
+                    <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="500">Các Trường Đại Học</h1>
                 </div>
+            </div>
+        </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-post">
-                        <div class="blog-post-img img5 img100z">
-                            <img src="{{ Storage::url($random->img_thumbnail) }}" alt="">
-                        </div>
-                        <div class="space16"></div>
-                        <ul class="blog-post-icons">
-                            <li><a href="#"><img src="{{ asset('assets') }}/client/img/icons/blog-post-icon1.svg"
-                                        alt="">{{ $random->created_at->format('H:i | d/m/Y') }}</a></li>
-                        </ul>
-                        <div class="space16"></div>
-                        <div class="hadding2">
-                            <h3><a href="{{ route('school.show', $random->id) }}">{{ $random->english_name }}</a></h3>
-                            <div class="space8"></div>
-                            <p>{{ \Illuminate\Support\Str::limit($random->description, 130) }}</p>
-                        </div>
-                    </div>
-                </div>
-
+    <form action="{{ route('schools.search') }}" method="GET" class="search-form">
+    <div class="input-group">
+        <input type="text" name="query" placeholder="Tìm Kiếm Trường Đại Học" value="{{ request()->query('query') }}" class="search-input">
+        <button type="submit" class="search-btn">Tìm Kiếm</button>
+    </div>
+</form>
+        <div class="space30"></div>
+            <div class="row">
                 @foreach ($schools as $item)
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog-post single-blog-post2">
@@ -89,7 +115,7 @@
                                 <ul class="blog-post-icons">
                                     <li><a href="#"><img
                                                 src="{{ asset('assets') }}/client/img/icons/blog-post-icon1.svg"
-                                                alt="">{{ $random->created_at->format('H:i | d/m/Y') }}</a></li>
+                                                alt="">{{ $item->created_at->format('H:i | d/m/Y') }}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -123,28 +149,29 @@
 
     <!--=====cta start=======-->
 
-    <div class="cta2" style="background-color: #13AAA1;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <div class="cta2-hadding2">
-                        <h1>Chúng tôi cam kết làm cho quá trình xin du học của bạn</h1>
-                        <div class="space16"></div>
-                        <p>Visa Consulting không chỉ xử lý giấy tờ; họ thực sự quan tâm đến sự thành công của khách hàng.
-                            Chuyên gia tư vấn của tôi không chỉ hỗ trợ tư vấn xin du học.</p>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="cta2-form">
-                        <div class="cta2-input">
-                            <input type="Enter Your Email" placeholder="Nhập địa chỉ Email">
+     <div class="cta2" style="background-color: #462ab4;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="cta2-hadding2">
+                                <h1>Chúng tôi cam kết làm cho quá trình xin thị thực của bạn
+                                </h1>
+                                <div class="space16"></div>
+                                <p>M.I.M không chỉ Đào Tạo; họ thực sự quan tâm đến sự thành công của khách hàng.
+                                    Chuyên gia tư vấn của tôi không chỉ giúp tư vấn.
+                                </p>
+                            </div>
                         </div>
-                        <button class="theme-btn5 cta2-button font-f-7">Đăng ký ngay</button>
+                        <div class="col-lg-5">
+                            <div class="cta2-form">
+
+                               <a href="/lien-he"><button class="theme-btn9 cta2-button font-f-7">Tư Vấn Ngay</button></a>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
     <!--=====cta end=======-->
 @endsection

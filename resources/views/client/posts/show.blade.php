@@ -84,7 +84,12 @@
                     <div class="space60"></div>
                     <div class="single-blog-post single-blog-post2">
                         <div class="blog-post-img img100">
-                            <img src="{{ asset('storage/' . $related->thumbnail) }}" alt="{{ $related->title }}">
+                         <div class="blog4-img img100">
+                               <div style="width: 100%; height: 250px; overflow: hidden; border-radius: 10px;">
+    <img src="{{ asset('storage/' . $related->thumbnail) }}" alt="{{ $related->title }}"
+         style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+                            </div>
                         </div>
                         <div class="hadding2 blog-post-hadding">
                             <h3><a href="{{ route('client.posts.show', $related->id) }}">{{ $related->title }}</a></h3>

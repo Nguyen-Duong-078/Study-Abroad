@@ -67,7 +67,7 @@
                       </div>
                 </div>
             </div>
-
+ <div class="space16"></div>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="contact7-icon-box contact7-icon-box2">
@@ -75,24 +75,23 @@
                             <img src="{{asset('assets/client/img/icons/page-contact-icon1.svg')}}" alt="">
                         </div>
                         <div class="contact7-iocn-hadding">
-                            <h4><a href="#">Office Address</a></h4>
+                            <h4><a href="#">Địa Chỉ</a></h4>
                             <div class="space6"></div>
-                            <a href="#">3520 E Bell Rd Phoenix Arkansas</a>
-                            <a href="#">85032 United States, NY 10018 </a>
+                            <a href="#">Lô 14 N06 Đường Thanh Niên,Phường Dĩnh Kế,Thành Phố Bắc Giang,Tỉnh Bắc Giang</a>
+
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4">
                     <div class="contact7-icon-box contact7-icon-box2">
                         <div class="contact7-icon">
                             <img src="{{ asset('assets/client/img/icons/contact-page2-icon1.svg') }} "alt="">
                         </div>
                         <div class="contact7-iocn-hadding">
-                            <h4><a href="#">Contact Number</a></h4>
+                            <h4><a href="#">Liện Hệ SDT</a></h4>
                             <div class="space6"></div>
-                            <a href="tel:+921-888-0022">+921 - 888 - 0022</a><br>
-                            <a href="tel:+921-777-0044">+921 - 777 - 0044 </a>
+                            <a href="tel:0398082228">039.808.2228</a><br>
+
                         </div>
                     </div>
                 </div>
@@ -105,8 +104,8 @@
                         <div class="contact7-iocn-hadding">
                             <h4><a href="#">Email Address</a></h4>
                             <div class="space6"></div>
-                            <a href="mailto:hello@visafast.com">hello@visafast.com</a> <br>
-                            <a href="mailto:support@visafast.com">support@visafast.com </a>
+                            <a href="mailto:Duhocmim@gmail.com">Duhocmim@gmail.com </a> <br>
+
                         </div>
                     </div>
                 </div>
@@ -116,32 +115,42 @@
       </div>
 
       <div class="contact-map-page">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196064.65881483705!2d88.93201515862421!3d24.061083775097945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39febca82f6a21ed%3A0x4040980d7c6874f8!2sKushtia%20District!5e0!3m2!1sen!2sbd!4v1673751720794!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-map-page-hadding">
+                        <h1>Địa Chỉ Của Chúng Tôi</h1>
+                        <div class="space16"></div>
+                        <p>Chúng tôi có thể giúp bạn tìm hiểu thêm về các dịch vụ của chúng tôi và cách chúng tôi có thể giúp bạn.</p>
+                    </div>
+                </div>
+            </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139262.06234466366!2d106.09782349178133!3d21.285843546790705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31356d76118d979f%3A0x5242df443b9b4c06!2zVGhhbmggTmnDqm4sIFRwLiBC4bqvYyBHaWFuZywgQuG6r2MgR2lhbmcsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1746932667737!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <!--=====contact end=======-->
 
       <!--=====cta start=======-->
 
-<div class="cta2" style="background-color: #13AAA1;">
-<div class="container">
-  <div class="row align-items-center">
-    <div class="col-lg-7">
-      <div class="cta2-hadding2">
-        <h1>We're Committed to Making your Visa Application Process</h1>
-        <div class="space16"></div>
-        <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My consultant not only helped with the application visa consulting.</p>
-      </div>
-    </div>
-    <div class="col-lg-5">
-      <div class="cta2-form">
-        <div class="cta2-input">
-          <input type="Enter Your Email" placeholder="Enter Your Email">
-        </div>
-          <button class="theme-btn5 cta2-button font-f-7">Subscribe Now</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+      <div class="cta2" style="background-color: #462ab4;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="cta2-hadding2">
+                                <h1>Chúng tôi cam kết làm cho quá trình xin thị thực của bạn
+                                </h1>
+                                <div class="space16"></div>
+                                <p>M.I.M không chỉ Đào Tạo; họ thực sự quan tâm đến sự thành công của khách hàng. Chuyên gia tư vấn của tôi không chỉ giúp tư vấn.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="cta2-form">
+
+                                <a href="/lien-he"><button class="theme-btn9 cta2-button font-f-7">Tư Vấn Ngay</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         @endsection
