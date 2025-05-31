@@ -62,7 +62,7 @@
                 <div class="col-lg-6">
                     <div class="contact-map contact-map2">
                         <div class="img100 img5" style="z-index: 4; position: relative;">
-                            <img src="{{asset('assets/client/img/image/contact-page.png')}}" alt="">
+                            <img src="{{asset('assets/client/img/image/bbb.png')}}" alt="">
                         </div>
                       </div>
                 </div>

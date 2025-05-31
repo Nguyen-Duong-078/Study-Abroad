@@ -40,15 +40,13 @@
                 <div class="col-lg-5">
                     <div class="hero2-all-images text-end">
                         <div class="hero2-img1">
-                            <img src="{{ asset('assets/client/img/image/about2-img.png') }}" alt="">
+                            <img src="{{ asset('assets/client/img/image/banner.jpg') }}" alt="" width="84%">
                         </div>
                         <div class="hero2-img2 aniamtion-key-2">
                             <img src="{{ asset('assets/client/img/shapes/hero2-img-element.svg') }}" alt="">
                         </div>
 
-                        <div class="hero2-img3">
-                            <img src="{{ asset('assets/client/img/shapes/hero2-img-element2.svg') }}" alt="">
-                        </div>
+
                     </div>
                 </div>
 
@@ -98,7 +96,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <div class="hadding2 about2-hadding">
                         <span>Sứ mệnh của chúng tôi</span>
                         <div class="space16"></div>
@@ -117,18 +115,17 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="hero2-all-images text-end">
-                        <div class="hero2-img1">
-                            <img src="{{ asset('assets/client/img/image/about2-img.png') }}" alt="">
+
+                        <div class="img">
+                            <img src="{{ asset('assets/client/img/image/gt1.jpg') }}" alt="" width="120%">
                         </div>
                         <div class="hero2-img2 aniamtion-key-2">
                             <img src="{{ asset('assets/client/img/shapes/hero2-img-element.svg') }}" alt="">
                         </div>
 
-                        <div class="hero2-img3">
-                            <img src="{{ asset('assets/client/img/shapes/hero2-img-element2.svg') }}" alt="">
-                        </div>
+
                     </div>
                 </div>
 
@@ -149,18 +146,18 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="img5 img100">
-                                <img src="{{ asset('assets/client/img/image/about-vision1.png') }}" alt="">
+                                <img src="{{ asset('assets/client/img/image/gt4.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="space30"></div>
                         <div class="col-lg-6 col-md-6">
                             <div class="img5 img100">
-                                <img src="{{ asset('assets/client/img/image/about-vision1.png') }}" alt="">
+                                <img src="{{ asset('assets/client/img/image/gt8.jpg') }}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="img5 img100">
-                                <img src="{{ asset('assets/client/img/image/about-vision1.png') }}" alt="">
+                                <img src="{{ asset('assets/client/img/image/gt11.jpg') }}" alt="">
                             </div>
                         </div>
                     </div>

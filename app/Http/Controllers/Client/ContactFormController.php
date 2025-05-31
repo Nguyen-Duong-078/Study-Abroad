@@ -51,7 +51,7 @@ class ContactFormController extends Controller
 
         // Gửi email
         //admin
-        Mail::to('hoanganhtq2020@gmail.com')->send(new ContactFormSubmitted($contact));
+        Mail::to('Trungtamduhocmim@gmail.com')->send(new ContactFormSubmitted($contact));
         //user
         Mail::to($contact->email)->send(new ContactFormConfirm($contact));
 

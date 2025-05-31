@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="hero4-img2">
-                            <img src="{{ asset('assets') }}/client/img/image/hero4-main-img.png" alt="">
+                            <img src="{{ asset('assets') }}/client/img/image/banner.jpg" alt="" width="90%">
                         </div>
 
                         <div class="hero4-img3 aniamtion-key-3">
@@ -86,11 +86,9 @@
                             <img src="{{ asset('assets') }}/client/img/shapes/elipse-about4.svg" alt="">
                         </div>
                         <div class="about4-img2" data-aos="zoom-out" data-aos-duration="700">
-                            <img src="{{ asset('assets') }}/client/img/image/about4-img1.png" alt="">
+                            <img src="{{ asset('assets') }}/client/img/image/gth1.jpg" alt="">
                         </div>
-                        <div class="about4-img3" data-aos="zoom-out" data-aos-duration="900">
-                            <img src="{{ asset('assets') }}/client/img/image/about4-img2.png" alt="">
-                        </div>
+
                     </div>
                 </div>
 
@@ -223,7 +221,7 @@
                         </div>
 
                         <div class="choose4-img-2 img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/choose4-img.png" alt="">
+                            <img src="{{ asset('assets') }}/client/img/image/gt5.jpg" alt="">
                         </div>
 
                         <div class="choose4-img-3 aniamtion-key-2">
@@ -250,8 +248,9 @@
                                         <img src="{{ asset('assets') }}/client/img/shapes/choose4-img-shape1.svg"
                                             alt="">
                                     </div>
+ <div class="space60"></div>
                                     <div class="choose4-img-2 img100 img5">
-                                        <img src="{{ asset('assets') }}/client/img/image/prosess-img.png" alt="">
+                                        <img src="{{ asset('assets') }}/client/img/image/gt4.jpg" alt="" width="100%">
                                     </div>
                                 </div>
                             </div>
@@ -509,128 +508,16 @@
             <div class="row">
                 <div class="col-lg-7 m-auto text-center">
                     <div class="hadding4">
-                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Đội ngũ của chúng tôi</span>
+                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Bài Viết </span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Thành viên nhóm chuyên gia của
-                            chúng tôi
+                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Đọc Thật Những Bài Viết Mới Nhất
+                            </h1>
                         </h1>
                     </div>
                 </div>
             </div>
             <div class="space60"></div>
             <div class="row">
-
-                <div class="col-lg-3">
-                    <div class="space30"></div>
-                    <div class="team4-box text-center" data-aos="fade-up" data-aos-duration="700">
-                        <div class="team4-img-box">
-                            <div class="team4-img img50 img100">
-                                <img src="{{ asset('assets') }}/client/img/image/team4-img1.png" alt="">
-                            </div>
-                            <ul class="team4-icons">
-                                <li class="team4-icon1"><a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                </li>
-                                <li class="team4-icon2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li class="team4-icon3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li class="team4-icon4"><a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hadding4">
-                            <h4><a href="team-details.html" class="font-f-4">Adman Michel</a></h4>
-                            <div class="space8"></div>
-                            <p class="font-f-2">Consultant</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-
-                    <div class="team4-box text-center" data-aos="fade-up" data-aos-duration="900">
-                        <div class="team4-img-box">
-                            <div class="team4-img img50 img100">
-                                <img src="{{ asset('assets') }}/client/img/image/team4-img2.png" alt="">
-                            </div>
-                            <ul class="team4-icons">
-                                <li class="team4-icon1"><a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                </li>
-                                <li class="team4-icon2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li class="team4-icon3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li class="team4-icon4"><a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hadding4">
-                            <h4><a href="team-details.html" class="font-f-4">Andrea Zieme</a></h4>
-                            <div class="space8"></div>
-                            <p class="font-f-2">Consultant</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="space30"></div>
-                    <div class="team4-box text-center" data-aos="fade-up" data-aos-duration="1100">
-                        <div class="team4-img-box">
-                            <div class="team4-img img50 img100">
-                                <img src="{{ asset('assets') }}/client/img/image/team4-img3.png" alt="">
-                            </div>
-                            <ul class="team4-icons">
-                                <li class="team4-icon1"><a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                </li>
-                                <li class="team4-icon2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li class="team4-icon3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li class="team4-icon4"><a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hadding4">
-                            <h4><a href="team-details.html" class="font-f-4">Michelle Schultz</a></h4>
-                            <div class="space8"></div>
-                            <p class="font-f-2">Consultant</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="team4-box text-center" data-aos="fade-up" data-aos-duration="1300">
-                        <div class="team4-img-box">
-                            <div class="team4-img img50 img100">
-                                <img src="{{ asset('assets') }}/client/img/image/team4-img4.png" alt="">
-                            </div>
-                            <ul class="team4-icons">
-                                <li class="team4-icon1"><a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                </li>
-                                <li class="team4-icon2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </li>
-                                <li class="team4-icon3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                </li>
-                                <li class="team4-icon4"><a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hadding4">
-                            <h4><a href="team-details.html" class="font-f-4">Alexis Herzog DVM</a></h4>
-                            <div class="space8"></div>
-                            <p class="font-f-2">Consultant</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!--=====team end=======-->
-
-    <!--=====blog start=======-->
-    <div class="row">
         @foreach ($posts->take(3) as $post)
             <div class="col-lg-4">
                 <div class="" data-aos="fade-up" data-aos-duration="{{ 700 + $loop->index * 200 }}">
@@ -671,6 +558,13 @@
             </div>
         @endforeach
     </div>
+        </div>
+    </div>
+
+    <!--=====team end=======-->
+
+    <!--=====blog start=======-->
+
 
 
     <!--=====blog end=======-->
