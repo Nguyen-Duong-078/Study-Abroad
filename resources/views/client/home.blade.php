@@ -1,22 +1,22 @@
 @extends('client.layouts.master')
 @section('content')
- <style>
-                                .tes4-bottom-img {
-                                    width: 50px;
-                                    height: 50px;
-                                    border-radius: 50%;
-                                    overflow: hidden;
-                                }
+    <style>
+        .tes4-bottom-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
 
-                                .tes4-bottom-img img {
-                                    width: 100%;
-                                    height: auto;
-                                }
-                                .tes4-hadding-bottom {
-                                    margin-left: 10px;
-                                }
+        .tes4-bottom-img img {
+            width: 100%;
+            height: auto;
+        }
 
-                            </style>
+        .tes4-hadding-bottom {
+            margin-left: 10px;
+        }
+    </style>
     <!--=====hero area start=======-->
     <div class="hero-area4 _relative">
         <div class="container">
@@ -45,7 +45,8 @@
                         </div>
 
                         <div class="hero4-img2">
-                            <img src="{{ asset('assets') }}/client/img/image/banner.jpg" alt="" width="90%">
+                            <img src="{{ asset('assets') }}/client/img/image/bbb.png" alt="" height="500px"
+                                width="500px">
                         </div>
 
                         <div class="hero4-img3 aniamtion-key-3">
@@ -85,10 +86,10 @@
                         <div class="about4-img1 aniamtion-key-2">
                             <img src="{{ asset('assets') }}/client/img/shapes/elipse-about4.svg" alt="">
                         </div>
-                        <div class="about4-img2" data-aos="zoom-out" data-aos-duration="700">
-                            <img src="{{ asset('assets') }}/client/img/image/gth1.jpg" alt="">
-                        </div>
 
+                        <div class="about4-img3" data-aos="zoom-out" data-aos-duration="900">
+                            <img src="{{ asset('assets') }}/client/img/image/gt3.jpg" alt="">
+                        </div>
                     </div>
                 </div>
 
@@ -146,11 +147,13 @@
                             </div>
                             <div class="hadding4">
                                 <div class="space16"></div>
-                                <h4><a href="{{ route('school.show', $item->id) }}" class="font-f-4">{{ $item->english_name }}</a></h4>
+                                <h4><a href="{{ route('school.show', $item->slug) }}"
+                                        class="font-f-4">{{ $item->english_name }}</a></h4>
                                 <div class="space16"></div>
                                 {{ \Illuminate\Support\Str::limit($item->description, 200) }}
                                 <div class="space16"></div>
-                                <a class="service4-learn-more font-f-2" href="{{ route('school.show', $item->id) }}">Xem
+                                <a class="service4-learn-more font-f-2"
+                                    href="{{ route('school.show', $item->slug) }}">Xem
                                     Thêm
                                     <span><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
@@ -221,7 +224,8 @@
                         </div>
 
                         <div class="choose4-img-2 img100 img5">
-                            <img src="{{ asset('assets') }}/client/img/image/gt5.jpg" alt="">
+                            <img src="{{ asset('assets') }}/client/img/image/gt5.jpg" alt="" height="800px"
+                                width="500px">
                         </div>
 
                         <div class="choose4-img-3 aniamtion-key-2">
@@ -248,9 +252,8 @@
                                         <img src="{{ asset('assets') }}/client/img/shapes/choose4-img-shape1.svg"
                                             alt="">
                                     </div>
- <div class="space60"></div>
                                     <div class="choose4-img-2 img100 img5">
-                                        <img src="{{ asset('assets') }}/client/img/image/gt4.jpg" alt="" width="100%">
+                                        <img src="{{ asset('assets') }}/client/img/image/gt1.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -375,19 +378,21 @@
             <div class="row">
                 <div class="tes4-slider owl-carousel" data-aos="fade-up" data-aos-duration="800">
 
-                              <div class="tes4-slider-single">
+                    <div class="tes4-slider-single">
                         <div class="tes4-icon">
                             <img src="{{ asset('assets') }}/client/img/icons/tes4-commnet.svg" alt="">
                         </div>
                         <div class="space30"></div>
                         <div class="tes4-hadding">
-                            <p class="font-f-2">"Tôi rất ấn tượng với sự tận tâm của đội ngũ Mim. Công ty đã giúp tôi chọn trường phù hợp và hỗ trợ tôi trong suốt quá trình chuẩn bị, kể cả trong giai đoạn làm quen với môi trường học tập ở Hàn Quốc. Nếu bạn muốn du học, mình chắc chắn sẽ giới thiệu Mim."
+                            <p class="font-f-2">"Tôi rất ấn tượng với sự tận tâm của đội ngũ Mim. Công ty đã giúp tôi chọn
+                                trường phù hợp và hỗ trợ tôi trong suốt quá trình chuẩn bị, kể cả trong giai đoạn làm quen
+                                với môi trường học tập ở Hàn Quốc. Nếu bạn muốn du học, mình chắc chắn sẽ giới thiệu Mim."
                             </p>
                         </div>
                         <div class="space30"></div>
                         <div class="tes4-bottom-hadding">
                             <div class="tes4-bottom-img img50">
-                                <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t39.30808-1/454447257_10161888693436796_9135072438501414970_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=2rEBTV3WGfMQ7kNvwFYijF8&_nc_oc=AdmR8unn3ZXNCggfn8pLUYxsxGQMZHbQ9DE71Y7XqvZhEeEYoxe5NYRJnfkQwqmLgG3SH1BENfKTc9OWxeOoGdTy&_nc_zt=24&_nc_ht=scontent.fhan5-7.fna&_nc_gid=Jmxb3Qq31T8gULtClfWeqQ&oh=00_AfJXokoaQ8qh8f4u235IBTvfGlrDisETCx-lac2D2S11Yg&oe=6825868D" alt="">
+                                <img src="{{ asset('assets/client/img/image/duong.jpg') }}" alt="">
                             </div>
                             <div class="tes4-hadding-bottom">
                                 <h6><a href="#" class="font-f-4">Nguyễn Dương</a></h6>
@@ -411,7 +416,7 @@
                         <div class="space30"></div>
                         <div class="tes4-bottom-hadding">
                             <div class="tes4-bottom-img img50">
-                                <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t39.30808-6/469464556_122133447560500037_7018608886317730094_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=wx1935kBVg0Q7kNvwHFFFmE&_nc_oc=Adnhwn-UPNHrfhmFwNwWLTp0nYLTru19D4iHhFvY1I5PsBc44NLTWeWjQLACcvF4Np6ktvL_3FcsHjWvcD8tG2vt&_nc_zt=23&_nc_ht=scontent.fhan5-5.fna&_nc_gid=eRlzBpyU7PtK7j_1lsQ-ZQ&oh=00_AfIERWTEJmlrxrglgtysJD9txoLCqp-zuhFf27ykcq1zmA&oe=68259F95" alt="">
+                                <img src="{{ asset('assets/client/img/image/huong.jpg') }}" alt="">
                             </div>
                             <div class="tes4-hadding-bottom">
                                 <h6><a href="#" class="font-f-4">Mai Linh</a></h6>
@@ -434,7 +439,7 @@
                         <div class="space30"></div>
                         <div class="tes4-bottom-hadding">
                             <div class="tes4-bottom-img img50">
-                                <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t39.30808-1/485776898_3804069006570343_3389028414669479604_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=qb4r3Nd12wIQ7kNvwFJkQ31&_nc_oc=AdloQ0Yqx5jTzvqSGqSIga1vTDH80cGOBn9iLOxWdTxgPs2Rf0npENWnq6jbNxHAUPde1MjYjV8KnHDxwMIdNqJ3&_nc_zt=24&_nc_ht=scontent.fhan5-7.fna&_nc_gid=UxChuejCL-lWG1ByO6u56g&oh=00_AfK4StdSi8F7wxPchFWiw6sgHgr8qy--ZkU_bZ89fOvDiA&oe=6825995D" alt="">
+                                <img src="{{ asset('assets/client/img/image/ta.jpg') }}" alt="">
                             </div>
                             <div class="tes4-hadding-bottom">
                                 <h6><a href="#" class="font-f-2">Tuấn Anh</a></h6>
@@ -450,12 +455,15 @@
                         </div>
                         <div class="space30"></div>
                         <div class="tes4-hadding">
-                            <p class="font-f-2"> "ôi rất ấn tượng với sự tận tâm của đội ngũ Mim. Công ty đã giúp tôi chọn trường phù hợp và hỗ trợ tôi trong suốt quá trình chuẩn bị, kể cả trong giai đoạn làm quen với môi trường học tập ở Hàn Quốc. Nếu bạn muốn du học, mình chắc chắn sẽ giới thiệu Mim."</p>
+                            <p class="font-f-2"> "ôi rất ấn tượng với sự tận tâm của đội ngũ Mim. Công ty đã giúp tôi chọn
+                                trường phù hợp và hỗ trợ tôi trong suốt quá trình chuẩn bị, kể cả trong giai đoạn làm quen
+                                với môi trường học tập ở Hàn Quốc. Nếu bạn muốn du học, mình chắc chắn sẽ giới thiệu Mim."
+                            </p>
                         </div>
                         <div class="space30"></div>
                         <div class="tes4-bottom-hadding">
                             <div class="tes4-bottom-img img50">
-                                <img src="https://img2.thuthuatphanmem.vn/uploads/2018/12/25/anh-gai-xinh-de-thuong_012901737.jpg" alt="">
+                                <img src="{{ asset('assets/client/img/image/huonghuong.jpg') }}" alt="">
                             </div>
                             <div class="tes4-hadding-bottom">
                                 <h6><a href="#" class="font-f-4">Phương Thảo</a></h6>
@@ -479,7 +487,8 @@
                         <div class="space30"></div>
                         <div class="tes4-bottom-hadding">
                             <div class="tes4-bottom-img img50">
-                                <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.6435-9/193761071_987411818678840_8244004490522235439_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ANwqMBNp8iQQ7kNvwHHANW6&_nc_oc=AdmEdI1PEnOKcT2YFuQ8HZw-qF6q1cBbd58mKjyfIRxo--2O5ZRMwI3HgDuuAUBN_FijPyIs5O1JWTDXdd0uxtov&_nc_zt=23&_nc_ht=scontent.fhan5-5.fna&_nc_gid=dCC4gvUHo7Ys5SLh0NaqjA&oh=00_AfKhH5fCUBoyKbOo-ajrvAi9n9_8_HengYmFo1k7jdLk2Q&oe=68473FB0" alt="">
+                                <img src="https://scontent.fhan5-5.fna.fbcdn.net/v/t1.6435-9/193761071_987411818678840_8244004490522235439_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ANwqMBNp8iQQ7kNvwHHANW6&_nc_oc=AdmEdI1PEnOKcT2YFuQ8HZw-qF6q1cBbd58mKjyfIRxo--2O5ZRMwI3HgDuuAUBN_FijPyIs5O1JWTDXdd0uxtov&_nc_zt=23&_nc_ht=scontent.fhan5-5.fna&_nc_gid=dCC4gvUHo7Ys5SLh0NaqjA&oh=00_AfKhH5fCUBoyKbOo-ajrvAi9n9_8_HengYmFo1k7jdLk2Q&oe=68473FB0"
+                                    alt="">
                             </div>
                             <div class="tes4-hadding-bottom">
                                 <h6><a href="#" class="font-f-4">Hoàng Anh Hehe</a></h6>
@@ -508,16 +517,128 @@
             <div class="row">
                 <div class="col-lg-7 m-auto text-center">
                     <div class="hadding4">
-                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Bài Viết </span>
+                        <span class="font-f-2" data-aos="fade-up" data-aos-duration="700">Đội ngũ của chúng tôi</span>
                         <div class="space16"></div>
-                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Đọc Thật Những Bài Viết Mới Nhất
-                            </h1>
+                        <h1 class="font-f-4" data-aos="fade-up" data-aos-duration="900">Thành viên nhóm chuyên gia của
+                            chúng tôi
                         </h1>
                     </div>
                 </div>
             </div>
             <div class="space60"></div>
             <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="space30"></div>
+                    <div class="team4-box text-center" data-aos="fade-up" data-aos-duration="700">
+                        <div class="team4-img-box">
+                            <div class="team4-img img50 img100">
+                                <img src="{{ asset('assets') }}/client/img/image/team4-img1.png" alt="">
+                            </div>
+                            <ul class="team4-icons">
+                                <li class="team4-icon1"><a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li class="team4-icon2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="team4-icon3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="team4-icon4"><a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hadding4">
+                            <h4><a href="team-details.html" class="font-f-4">Adman Michel</a></h4>
+                            <div class="space8"></div>
+                            <p class="font-f-2">Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="team4-box text-center" data-aos="fade-up" data-aos-duration="900">
+                        <div class="team4-img-box">
+                            <div class="team4-img img50 img100">
+                                <img src="{{ asset('assets') }}/client/img/image/team4-img2.png" alt="">
+                            </div>
+                            <ul class="team4-icons">
+                                <li class="team4-icon1"><a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li class="team4-icon2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="team4-icon3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="team4-icon4"><a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hadding4">
+                            <h4><a href="team-details.html" class="font-f-4">Andrea Zieme</a></h4>
+                            <div class="space8"></div>
+                            <p class="font-f-2">Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="space30"></div>
+                    <div class="team4-box text-center" data-aos="fade-up" data-aos-duration="1100">
+                        <div class="team4-img-box">
+                            <div class="team4-img img50 img100">
+                                <img src="{{ asset('assets') }}/client/img/image/team4-img3.png" alt="">
+                            </div>
+                            <ul class="team4-icons">
+                                <li class="team4-icon1"><a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li class="team4-icon2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="team4-icon3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="team4-icon4"><a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hadding4">
+                            <h4><a href="team-details.html" class="font-f-4">Michelle Schultz</a></h4>
+                            <div class="space8"></div>
+                            <p class="font-f-2">Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="team4-box text-center" data-aos="fade-up" data-aos-duration="1300">
+                        <div class="team4-img-box">
+                            <div class="team4-img img50 img100">
+                                <img src="{{ asset('assets') }}/client/img/image/team4-img4.png" alt="">
+                            </div>
+                            <ul class="team4-icons">
+                                <li class="team4-icon1"><a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li class="team4-icon2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="team4-icon3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="team4-icon4"><a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hadding4">
+                            <h4><a href="team-details.html" class="font-f-4">Alexis Herzog DVM</a></h4>
+                            <div class="space8"></div>
+                            <p class="font-f-2">Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--=====team end=======-->
+
+    <!--=====blog start=======-->
+    <div class="row">
         @foreach ($posts->take(3) as $post)
             <div class="col-lg-4">
                 <div class="" data-aos="fade-up" data-aos-duration="{{ 700 + $loop->index * 200 }}">
@@ -544,27 +665,21 @@
                                     {{ $post->category->name }}</a>
                             </div>
                             <div class="space16"></div>
-                            <h4><a href="{{ route('client.posts.show', ['id' => $post->id]) }}"
+                            <h4><a href="{{ route('client.posts.show', [$post->slug]) }}"
                                     class="font-f-4">{{ $post->title }}</a></h4>
 
                             <div class="space16"></div>
                             <p class="font-f-2">{{ Str::limit($post->summary, 100) }}</p>
                             <div class="space24"></div>
-                            <a class="service4-learn-more font-f-2" href="Bai-viet">Xem Thêm Bài Viết <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
+                            <a class="service4-learn-more font-f-2" href="{{ route('client.posts.show', $post->slug) }}">
+                                Xem Thêm Bài Viết <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         @endforeach
     </div>
-        </div>
-    </div>
-
-    <!--=====team end=======-->
-
-    <!--=====blog start=======-->
-
 
 
     <!--=====blog end=======-->
@@ -574,18 +689,18 @@
     <div class="cta4">
         <div class="container">
             <div class="row">
-    <div class="col-lg-8 m-auto text-center">
-        <div class="hadding4">
-            <h1 class="font-f-4">Hãy để hành trình du học của bạn được dễ dàng và an toàn ngay hôm nay!</h1>
-            <div class="space30"></div>
-        </div>
-        <div class="cta4-subsribe-all _relative">
-            <form action="/lien-he" style="display:flex; justify-content:center; margin-top:20px;">
-                <button type="submit" class="theme-btn9 font-f-4">Đăng ký ngay</button>
-            </form>
-        </div>
-    </div>
-</div>
+                <div class="col-lg-8 m-auto text-center">
+                    <div class="hadding4">
+                        <h1 class="font-f-4">Hãy để hành trình du học của bạn được dễ dàng và an toàn ngay hôm nay!</h1>
+                        <div class="space30"></div>
+                    </div>
+                    <div class="cta4-subsribe-all _relative">
+                        <form action="/lien-he" style="display:flex; justify-content:center; margin-top:20px;">
+                            <button type="submit" class="theme-btn9 font-f-4">Đăng ký ngay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

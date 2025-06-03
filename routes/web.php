@@ -10,7 +10,7 @@ use App\Http\Controllers\ContactFormController;
 
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/school/{id}', [SchoolController::class, 'school'])->name('school.show');
+Route::get('/schools/{school:slug}', [SchoolController::class, 'show'])->name('school.show');
 Route::get('/schools', [SchoolController::class, 'schools'])->name('schools');
 Route::get('/schools/search', [SchoolController::class, 'search'])->name('schools.search');
 
@@ -27,7 +27,7 @@ Route::get('/lien-he/cam-on', [ClientContactFormController::class, 'thank'])->na
 
 
 Route::get('/Bai-viet', [ClientPostController::class, 'index'])->name('posts.index');
-Route::get('/bai-viet/{id}', [ClientPostController::class, 'show'])->name('client.posts.show');
+Route::get('/bai-viet/{slug}', [ClientPostController::class, 'show'])->name('client.posts.show');
 
 
 
